@@ -1,0 +1,46 @@
+{
+  "levels": [
+    {
+      "id": "daily-life",
+      "title": "Daily life"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "daily-01",
+      "level": "daily-life",
+      "title": "Useful expressions"
+    }
+  ],
+  "items": [
+    {
+      "id": "daily-hello",
+      "level": "daily-life",
+      "lesson": "daily-01",
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "tones": [
+        3,
+        3
+      ],
+      "meaning": "hello",
+      "type": "phrase",
+      "difficulty": 1
+    },
+    {
+      "id": "daily-wait",
+      "level": "daily-life",
+      "lesson": "daily-01",
+      "hanzi": "等一下",
+      "pinyin": "děng yí xià",
+      "tones": [
+        3,
+        2,
+        4
+      ],
+      "meaning": "wait a moment",
+      "type": "phrase",
+      "difficulty": 2
+    }
+  ]
+}
