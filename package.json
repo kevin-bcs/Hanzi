@@ -1,0 +1,12 @@
+{
+  "name":"hanzi-daily",
+  "version":"1.0.0",
+  "private":true,
+  "type":"module",
+  "scripts":{
+    "start":"node scripts/serve.cjs",
+    "test":"node tests/regression.cjs && node --experimental-vm-modules tests/modules.test.cjs",
+    "check":"node scripts/check.cjs"
+  },
+  "engines":{"node":">=20"}
+}
