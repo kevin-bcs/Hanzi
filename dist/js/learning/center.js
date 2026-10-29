@@ -1,3 +1,4 @@
+import {showActivityMenu} from './activities.js';
 /** One catalog and selection bridge; existing activity engines retain their settings. */
 import {runtime} from '../state/app-state.js';
 import {$} from '../config/constants.js';
@@ -26,7 +27,7 @@ export function renderLearningCenter() {
     for (const [type, title, enabled] of [
       ['learn','Study vocabulary',words.length>0], ['study','Spaced review',words.length>0],
       ['quiz','Multiple Choice',summary.choices>=4], ['memory','Word Matching',summary.pairs>=3],
-      ['tone','Tone Drill',words.length>0]]) {
+      ['tone','Tone Drill',words.length>0], ['activities','All 15 activities',words.length>0]]) {
       const button = document.createElement('button'); button.textContent = title; button.disabled = !enabled;
       if (!enabled) button.title = type==='quiz' ? 'Needs four distinct meanings in this selection.' : 'Not enough vocabulary for this activity.';
       button.onclick = () => launchLearningActivity(type, lesson);
@@ -38,6 +39,7 @@ export function renderLearningCenter() {
 export function launchLearningActivity(type, lesson) {
   const section = lesson?.section || '*';
   runtime.learningSelection = {lessonId:lesson?.id || '*', section};
+  if (type==='activities') { showActivityMenu(lesson); return; }
   if (type==='learn') {
     go('learn');
     if (lesson) {

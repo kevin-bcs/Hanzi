@@ -51,11 +51,12 @@
         classroom storage is connected.
       </p>
     </section>
+    <section id="practice" class="hidden" aria-label="Learning activity"></section>
     <section id="learning" class="hidden" aria-labelledby="learningTitle">
       <span class="eyebrow">YOUR LESSONS. YOUR PACE.</span>
       <h2 id="learningTitle">Learning Center — <span lang="zh-CN">学习中心</span></h2>
       <p>Choose a lesson, then study or practice its vocabulary. All Lessons includes your full collection.</p>
-      <p class="small">Progress counts words viewed, not mastery. More activities will be added in the next phases.</p>
+      <p class="small">Progress counts words viewed, not mastery. Choose All 15 activities to explore listening, writing, stories and adaptive practice.</p>
       <div id="learningCards" class="learning-grid"></div>
     </section>
     <section id="learn" class="hidden panel">
@@ -211,6 +212,8 @@
       <div id="memoryMenu" class="hidden game-menu">
         <button id="memoryHome">← All games</button>
         <h2>Memorama</h2>
+        <label>Match format<select id="memoryFormat">
+        <option value="combined">Hanzi ↔ Pinyin + English</option><option value="hanzi-english">Hanzi ↔ English</option><option value="hanzi-pinyin">Hanzi ↔ Pinyin</option><option value="pinyin-english">Pinyin ↔ English</option></select></label>
         <p>Match a hanzi card with its pinyin and English meaning.</p>
         <div id="memoryLessons" class="lesson-picker"></div>
         <div class="toolbar">

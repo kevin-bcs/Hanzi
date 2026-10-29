@@ -251,3 +251,5 @@ go("home");
 $("chooseInitials").onclick = () => configureSounds("initials");
 $("chooseFinals").onclick = () => configureSounds("finals");
 $("soundModeBack").onclick = showSoundModes;
+
+$("memoryFormat").onchange = updateCardOptions;

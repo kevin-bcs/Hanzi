@@ -77,7 +77,11 @@
     "pinyin": "bà ba",
     "english": "dad",
     "category": "family",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "dad",
+      "father"
+    ]
   },
   {
     "id": "v10",
@@ -85,7 +89,11 @@
     "pinyin": "mā ma",
     "english": "mom",
     "category": "family",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "mom",
+      "mother"
+    ]
   },
   {
     "id": "v11",
@@ -143,7 +151,11 @@
     "pinyin": "ma",
     "english": "question particle (at the end of a yes/no question)",
     "category": "particle",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "question particle",
+      "yes/no question particle"
+    ]
   },
   {
     "id": "v18",
@@ -231,7 +243,11 @@
     "pinyin": "wǒ",
     "english": "I; me",
     "category": "pronoun",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "I",
+      "me"
+    ]
   },
   {
     "id": "v29",
@@ -239,7 +255,11 @@
     "pinyin": "wǒ men",
     "english": "we; us",
     "category": "pronoun",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "we",
+      "us"
+    ]
   },
   {
     "id": "v30",
@@ -247,7 +267,12 @@
     "pinyin": "nǐ men",
     "english": "you (plural)",
     "category": "pronoun",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "you",
+      "you all",
+      "you (plural)"
+    ]
   },
   {
     "id": "v31",
@@ -255,7 +280,11 @@
     "pinyin": "tā men",
     "english": "they; them (masculine or mixed)",
     "category": "pronoun",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "they",
+      "them"
+    ]
   },
   {
     "id": "v32",
@@ -263,7 +292,11 @@
     "pinyin": "tā men",
     "english": "they; them (feminine)",
     "category": "pronoun",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "they",
+      "them"
+    ]
   },
   {
     "id": "v33",
@@ -271,7 +304,11 @@
     "pinyin": "de",
     "english": "structural particle; links a modifier to a noun",
     "category": "particle",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "structural particle",
+      "possessive particle"
+    ]
   },
   {
     "id": "v34",
@@ -359,7 +396,12 @@
     "pinyin": "hǎo kàn",
     "english": "good-looking; interesting",
     "category": "adjective",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "good-looking",
+      "good looking",
+      "interesting"
+    ]
   },
   {
     "id": "v45",
@@ -367,7 +409,11 @@
     "pinyin": "yé ye",
     "english": "grandpa",
     "category": "family",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "grandpa",
+      "grandfather"
+    ]
   },
   {
     "id": "v46",
@@ -375,7 +421,11 @@
     "pinyin": "nǎi nai",
     "english": "grandma",
     "category": "family",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "grandma",
+      "grandmother"
+    ]
   },
   {
     "id": "v47",
@@ -489,7 +539,13 @@
     "pinyin": "Hàn yǔ",
     "english": "Chinese language",
     "category": "language",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "Chinese",
+      "Chinese language",
+      "Mandarin",
+      "Mandarin Chinese"
+    ]
   },
   {
     "id": "v61",
@@ -497,7 +553,11 @@
     "pinyin": "Yīng yǔ",
     "english": "English language",
     "category": "language",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "English",
+      "English language"
+    ]
   },
   {
     "id": "v62",
@@ -529,7 +589,12 @@
     "pinyin": "bú kè qi",
     "english": "you are welcome",
     "category": "expression",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "you are welcome",
+      "you’re welcome",
+      "you're welcome"
+    ]
   },
   {
     "id": "v66",
@@ -537,7 +602,11 @@
     "pinyin": "duì bu qǐ",
     "english": "sorry; excuse me",
     "category": "expression",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "sorry",
+      "excuse me"
+    ]
   },
   {
     "id": "v67",
@@ -545,7 +614,12 @@
     "pinyin": "méi guān xi",
     "english": "it does not matter",
     "category": "expression",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "it does not matter",
+      "it doesn't matter",
+      "no problem"
+    ]
   },
   {
     "id": "v68",
@@ -553,7 +627,11 @@
     "pinyin": "nín",
     "english": "you (respectful)",
     "category": "pronoun",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "you",
+      "you (respectful)"
+    ]
   },
   {
     "id": "v69",
@@ -617,7 +695,12 @@
     "pinyin": "shì",
     "english": "be; yes",
     "category": "verb",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "be",
+      "yes",
+      "to be"
+    ]
   },
   {
     "id": "v77",
@@ -667,7 +750,12 @@
     "pinyin": "shǒu jī",
     "english": "mobile phone",
     "category": "noun",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "mobile phone",
+      "cell phone",
+      "cellphone"
+    ]
   },
   {
     "id": "v83",
@@ -937,7 +1025,10 @@
     "pinyin": "liǎng",
     "english": "two (before measure words)",
     "category": "vocabulary",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "two"
+    ]
   },
   {
     "id": "v126",
@@ -945,7 +1036,11 @@
     "pinyin": "gè",
     "english": "general measure word",
     "category": "vocabulary",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "general measure word",
+      "measure word"
+    ]
   },
   {
     "id": "v127",
@@ -1009,7 +1104,11 @@
     "pinyin": "kuài",
     "english": "yuan (colloquial)",
     "category": "vocabulary",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "yuan",
+      "yuan (colloquial)"
+    ]
   },
   {
     "id": "v135",
@@ -1017,7 +1116,12 @@
     "pinyin": "yuán",
     "english": "yuan (RMB unit)",
     "category": "vocabulary",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "yuan",
+      "RMB unit",
+      "yuan (RMB unit)"
+    ]
   },
   {
     "id": "v136",
@@ -1025,7 +1129,11 @@
     "pinyin": "máo",
     "english": "one tenth of a yuan (colloquial)",
     "category": "vocabulary",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "one tenth of a yuan",
+      "0.1 yuan"
+    ]
   },
   {
     "id": "v137",
@@ -1033,7 +1141,11 @@
     "pinyin": "jiǎo",
     "english": "one tenth of a yuan",
     "category": "vocabulary",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "one tenth of a yuan",
+      "0.1 yuan"
+    ]
   },
   {
     "id": "v139",
@@ -1089,7 +1201,10 @@
     "pinyin": "xīng qī tiān / xīng qī rì",
     "english": "Sunday",
     "category": "vocabulary",
-    "example": ""
+    "example": "",
+    "acceptedEnglish": [
+      "Sunday"
+    ]
   },
   {
     "id": "v148",

@@ -63,3 +63,6 @@ Shared mutable application/session bindings. No persistence happens here.
 
 # dist/js/utils.js
 Hanzi Daily module: utils.js. Public exports are consumed through explicit imports; mutable session state lives in app-state.js.
+
+# Learning Center (Phases 1–4)
+`dist/js/learning/center.js` connects lesson selection to existing study/game engines. `activities.js` owns settings, question presentation, branches and session lifecycle. `questions.js` is the shared pure question/answer planner; `history.js` owns additive bounded practice history; `practice-audio.js` resolves verified audio completion for safe clocks. `content-validator.js` validates authored lesson-bound sentences and finite branches. `scripts/build-exercises.js` generates reader objects and `data/generated-exercises.js` from `content/exercises/`. The existing Interactive Reader supports a Learning Center host without duplicating the reader engine. See `docs/LEARNING_CENTER.md`.

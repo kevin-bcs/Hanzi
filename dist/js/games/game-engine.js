@@ -51,7 +51,7 @@ export function gameTop(title, extra = "") {
 
 export function setupBack() {
   $("backLesson").onclick = () => go("learn");
-  $("backGames").onclick = () => openGameMenu(runtime.activeGame);
+  $("backGames").onclick = () => openGameMenu(runtime.activeGame, runtime.learningMatching);
   $("gameHome").onclick = showGameHome;
   $("restartGame").onclick = () =>
     runtime.activeGame === "memory"

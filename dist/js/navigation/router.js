@@ -1,5 +1,6 @@
+import {stopPracticeSession} from '../learning/activities.js';
 import {renderLearningCenter} from '../learning/center.js';
-import {showReadings} from '../readings/controller.js';
+import {showReadings,invalidateReadingsView} from '../readings/controller.js';
 import {stopReadings} from '../readings/audio.js';
 /** Hanzi Daily module: navigation/router.js. Public exports are consumed through explicit imports; mutable session state lives in app-state.js. */
 import { runtime } from "../state/app-state.js";
@@ -16,6 +17,8 @@ import { renderLearningLevels } from "../components/lesson-view.js";
 import { renderProgress } from "../components/progress-view.js";
 
 export function go(tab) {
+  stopPracticeSession();
+  if(tab!=="readings")invalidateReadingsView();
   stopReadings();
   if(tab === "readings") showReadings();
   stopTimers();
@@ -60,7 +63,8 @@ export function showGameHome() {
   $("gameModes").classList.remove("hidden");
 }
 
-export function openGameMenu(type) {
+export function openGameMenu(type, fromLearning = false) {
+  if(type === "memory") runtime.learningMatching = fromLearning;
   if (type === "initials") {
     showSoundModes();
     return;

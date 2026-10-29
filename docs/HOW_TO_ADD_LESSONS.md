@@ -17,3 +17,5 @@ Ejemplo de palabra (usar ID nuevo; añadir a la lista JSON existente):
 ```
 
 Compatibilidad: los IDs v0… originales se mantienen. El contenido guardado y las ediciones personales anteriores se conservan; el catálogo de lecciones se obtiene del código. Los nuevos recursos e imágenes se incorporan al generar y publicar. Las ediciones de texto que un alumno ya tenga guardadas no se sobrescriben silenciosamente. El respaldo/restauración del progreso sigue en Vocabulary.
+
+Optional `acceptedEnglish` is an array of explicitly reviewed English equivalents for typed translation, for example `["dad", "father"]`. It does not replace the displayed `english` gloss. The lesson builder validates this field and reuses it in Learning Center; do not put acceptable answers in UI components.

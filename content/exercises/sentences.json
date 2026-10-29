@@ -1,0 +1,336 @@
+[
+  {
+    "id": "first-love",
+    "lesson": "section:Lesson 1 · First words",
+    "tokens": [
+      "v2",
+      "v5",
+      "v12"
+    ],
+    "text": "她爱猫。",
+    "english": "She loves cats.",
+    "accepted": [
+      "She loves cats.",
+      "She loves the cat."
+    ],
+    "blank": 1,
+    "explanation": "Subject + 爱 + object. Chinese nouns do not need a plural ending."
+  },
+  {
+    "id": "first-pen",
+    "lesson": "section:Lesson 1 · First words",
+    "tokens": [
+      "v2",
+      "v6",
+      "v11"
+    ],
+    "text": "她买笔。",
+    "english": "She buys a pen.",
+    "accepted": [
+      "She buys a pen.",
+      "She buys pens."
+    ],
+    "blank": 1,
+    "explanation": "买 means buy; 卖 means sell. Keep the subject before the verb."
+  },
+  {
+    "id": "first-question",
+    "lesson": "section:Lesson 1 · First words",
+    "tokens": [
+      "v0",
+      "v4",
+      "v17"
+    ],
+    "text": "你来吗？",
+    "english": "Are you coming?",
+    "accepted": [
+      "Are you coming?",
+      "Will you come?"
+    ],
+    "blank": 2,
+    "explanation": "吗 at the end turns this statement into a yes/no question."
+  },
+  {
+    "id": "people-busy",
+    "lesson": "section:Lesson 2 · People & descriptions",
+    "tokens": [
+      "v28",
+      "v37",
+      "v39"
+    ],
+    "text": "我很忙。",
+    "english": "I am busy.",
+    "accepted": [
+      "I am busy.",
+      "I am very busy."
+    ],
+    "blank": 2,
+    "explanation": "很 connects the subject and adjective here; it does not always mean very."
+  },
+  {
+    "id": "people-tall",
+    "lesson": "section:Lesson 2 · People & descriptions",
+    "tokens": [
+      "v34",
+      "v37",
+      "v42"
+    ],
+    "text": "哥哥很高。",
+    "english": "Older brother is tall.",
+    "accepted": [
+      "Older brother is tall.",
+      "My older brother is tall."
+    ],
+    "blank": 2,
+    "explanation": "Use 很 before this adjective predicate; no 是 is needed."
+  },
+  {
+    "id": "people-sleepy",
+    "lesson": "section:Lesson 2 · People & descriptions",
+    "tokens": [
+      "v29",
+      "v37",
+      "v41"
+    ],
+    "text": "我们很困。",
+    "english": "We are sleepy.",
+    "accepted": [
+      "We are sleepy.",
+      "We are very sleepy."
+    ],
+    "blank": 2,
+    "explanation": "我们 is plural. 很困 describes being sleepy, not being busy."
+  },
+  {
+    "id": "daily-coffee",
+    "lesson": "section:Lesson 3 · Daily words",
+    "tokens": [
+      "v48",
+      "v54"
+    ],
+    "text": "喝咖啡。",
+    "english": "Drink coffee.",
+    "accepted": [
+      "Drink coffee."
+    ],
+    "blank": 1,
+    "explanation": "喝 combines with drinks such as 咖啡. This is a short imperative."
+  },
+  {
+    "id": "daily-chinese",
+    "lesson": "section:Lesson 3 · Daily words",
+    "tokens": [
+      "v52",
+      "v60"
+    ],
+    "text": "学习汉语。",
+    "english": "Study Chinese.",
+    "accepted": [
+      "Study Chinese.",
+      "Learn Chinese."
+    ],
+    "blank": 1,
+    "explanation": "学习 is followed by the subject being studied."
+  },
+  {
+    "id": "daily-music",
+    "lesson": "section:Lesson 3 · Daily words",
+    "tokens": [
+      "v50",
+      "v59"
+    ],
+    "text": "听音乐。",
+    "english": "Listen to music.",
+    "accepted": [
+      "Listen to music."
+    ],
+    "blank": 1,
+    "explanation": "听 takes 音乐 directly; no Chinese equivalent of to is needed here."
+  },
+  {
+    "id": "questions-book",
+    "lesson": "section:Lesson 4 · Questions & everyday words",
+    "tokens": [
+      "v69",
+      "v76",
+      "v81"
+    ],
+    "text": "这是书。",
+    "english": "This is a book.",
+    "accepted": [
+      "This is a book.",
+      "This is the book."
+    ],
+    "blank": 2,
+    "explanation": "这是 identifies an object: this + be + noun."
+  },
+  {
+    "id": "questions-teacher",
+    "lesson": "section:Lesson 4 · Questions & everyday words",
+    "tokens": [
+      "v74",
+      "v76",
+      "v84"
+    ],
+    "text": "谁是老师？",
+    "english": "Who is the teacher?",
+    "accepted": [
+      "Who is the teacher?",
+      "Who is a teacher?"
+    ],
+    "blank": 2,
+    "explanation": "谁 stays in the subject position. This question does not use 吗."
+  },
+  {
+    "id": "questions-home",
+    "lesson": "section:Lesson 4 · Questions & everyday words",
+    "tokens": [
+      "v85",
+      "v78",
+      "v87"
+    ],
+    "text": "学生回家。",
+    "english": "The student goes home.",
+    "accepted": [
+      "The student goes home.",
+      "The student returns home.",
+      "Students go home."
+    ],
+    "blank": 2,
+    "explanation": "回家 means go home. Place 学生 before the verb."
+  },
+  {
+    "id": "dates-march",
+    "lesson": "section:Lesson 5 · Numbers, money & dates",
+    "tokens": [
+      "v20",
+      "v142",
+      "v22",
+      "v144"
+    ],
+    "text": "三月五号。",
+    "english": "March 5.",
+    "accepted": [
+      "March 5.",
+      "March fifth.",
+      "The fifth of March."
+    ],
+    "blank": 2,
+    "explanation": "Chinese dates put the month before the day. 号 is used for the day of the month."
+  },
+  {
+    "id": "dates-price",
+    "lesson": "section:Lesson 5 · Numbers, money & dates",
+    "tokens": [
+      "v131",
+      "v133"
+    ],
+    "text": "多少钱？",
+    "english": "How much does it cost?",
+    "accepted": [
+      "How much does it cost?",
+      "How much money?",
+      "How much is it?"
+    ],
+    "blank": 0,
+    "explanation": "多少钱 asks about a price. It is a complete question without 吗."
+  },
+  {
+    "id": "dates-three-yuan",
+    "lesson": "section:Lesson 5 · Numbers, money & dates",
+    "tokens": [
+      "v20",
+      "v134"
+    ],
+    "text": "三块。",
+    "english": "Three yuan.",
+    "accepted": [
+      "Three yuan.",
+      "3 yuan."
+    ],
+    "blank": 0,
+    "explanation": "块 is the colloquial currency unit after the number."
+  },
+  {
+    "id": "first-newspaper",
+    "lesson": "section:Lesson 1 · First words",
+    "tokens": [
+      "v1",
+      "v8",
+      "v14"
+    ],
+    "text": "他读报。",
+    "english": "He reads a newspaper.",
+    "accepted": [
+      "He reads a newspaper.",
+      "He reads the newspaper."
+    ],
+    "explanation": "读 means read; 报 is the newspaper.",
+    "blank": 1
+  },
+  {
+    "id": "people-tired",
+    "lesson": "section:Lesson 2 · People & descriptions",
+    "tokens": [
+      "v36",
+      "v37",
+      "v40"
+    ],
+    "text": "妹妹很累。",
+    "english": "Younger sister is tired.",
+    "accepted": [
+      "Younger sister is tired.",
+      "My younger sister is tired."
+    ],
+    "explanation": "累 means tired; 困 means sleepy.",
+    "blank": 2
+  },
+  {
+    "id": "daily-milk",
+    "lesson": "section:Lesson 3 · Daily words",
+    "tokens": [
+      "v48",
+      "v55"
+    ],
+    "text": "喝牛奶。",
+    "english": "Drink milk.",
+    "accepted": [
+      "Drink milk."
+    ],
+    "explanation": "喝 is followed directly by the drink.",
+    "blank": 1
+  },
+  {
+    "id": "questions-phone",
+    "lesson": "section:Lesson 4 · Questions & everyday words",
+    "tokens": [
+      "v70",
+      "v76",
+      "v82"
+    ],
+    "text": "那是手机。",
+    "english": "That is a mobile phone.",
+    "accepted": [
+      "That is a mobile phone.",
+      "That is a cell phone."
+    ],
+    "explanation": "那 refers to that, while 这 refers to this.",
+    "blank": 0
+  },
+  {
+    "id": "dates-wednesday",
+    "lesson": "section:Lesson 5 · Numbers, money & dates",
+    "tokens": [
+      "v102",
+      "v145",
+      "v20"
+    ],
+    "text": "明天星期三。",
+    "english": "Tomorrow is Wednesday.",
+    "accepted": [
+      "Tomorrow is Wednesday."
+    ],
+    "explanation": "A day-of-week expression can follow the time topic without 是.",
+    "blank": 2
+  }
+]

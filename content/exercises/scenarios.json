@@ -1,0 +1,497 @@
+[
+  {
+    "id": "school",
+    "lesson": "section:Lesson 1 · First words",
+    "title": "School supplies",
+    "context": "A classmate is buying supplies. Help describe what she does.",
+    "start": "step-1",
+    "nodes": [
+      {
+        "id": "step-1",
+        "sentence": "first-pen",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: She buys a pen.",
+        "options": [
+          {
+            "sentence": "first-pen",
+            "correct": true,
+            "next": "step-2"
+          },
+          {
+            "sentence": "first-love",
+            "correct": false,
+            "next": "help-1"
+          },
+          {
+            "sentence": "first-question",
+            "correct": false,
+            "next": "help-1"
+          }
+        ]
+      },
+      {
+        "id": "help-1",
+        "sentence": "first-pen",
+        "speaker": "Guide",
+        "explanation": "买 means buy; 卖 means sell. Keep the subject before the verb.",
+        "next": "step-2"
+      },
+      {
+        "id": "step-2",
+        "sentence": "first-love",
+        "speaker": "Chen",
+        "prompt": "Choose the line that means: She loves cats.",
+        "options": [
+          {
+            "sentence": "first-love",
+            "correct": true,
+            "next": "step-3"
+          },
+          {
+            "sentence": "first-pen",
+            "correct": false,
+            "next": "help-2"
+          },
+          {
+            "sentence": "first-question",
+            "correct": false,
+            "next": "help-2"
+          }
+        ]
+      },
+      {
+        "id": "help-2",
+        "sentence": "first-love",
+        "speaker": "Guide",
+        "explanation": "Subject + 爱 + object. Chinese nouns do not need a plural ending.",
+        "next": "step-3"
+      },
+      {
+        "id": "step-3",
+        "sentence": "first-question",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: Are you coming?",
+        "options": [
+          {
+            "sentence": "first-question",
+            "correct": true,
+            "next": null
+          },
+          {
+            "sentence": "first-pen",
+            "correct": false,
+            "next": "help-3"
+          },
+          {
+            "sentence": "first-love",
+            "correct": false,
+            "next": "help-3"
+          }
+        ]
+      },
+      {
+        "id": "help-3",
+        "sentence": "first-question",
+        "speaker": "Guide",
+        "explanation": "吗 at the end turns this statement into a yes/no question.",
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "friends",
+    "lesson": "section:Lesson 2 · People & descriptions",
+    "title": "Meeting friends",
+    "context": "You meet an older brother and his friends. Describe how everyone feels.",
+    "start": "step-1",
+    "nodes": [
+      {
+        "id": "step-1",
+        "sentence": "people-busy",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: I am busy.",
+        "options": [
+          {
+            "sentence": "people-busy",
+            "correct": true,
+            "next": "step-2"
+          },
+          {
+            "sentence": "people-tall",
+            "correct": false,
+            "next": "help-1"
+          },
+          {
+            "sentence": "people-sleepy",
+            "correct": false,
+            "next": "help-1"
+          }
+        ]
+      },
+      {
+        "id": "help-1",
+        "sentence": "people-busy",
+        "speaker": "Guide",
+        "explanation": "很 connects the subject and adjective here; it does not always mean very.",
+        "next": "step-2"
+      },
+      {
+        "id": "step-2",
+        "sentence": "people-tall",
+        "speaker": "Chen",
+        "prompt": "Choose the line that means: Older brother is tall.",
+        "options": [
+          {
+            "sentence": "people-tall",
+            "correct": true,
+            "next": "step-3"
+          },
+          {
+            "sentence": "people-busy",
+            "correct": false,
+            "next": "help-2"
+          },
+          {
+            "sentence": "people-sleepy",
+            "correct": false,
+            "next": "help-2"
+          }
+        ]
+      },
+      {
+        "id": "help-2",
+        "sentence": "people-tall",
+        "speaker": "Guide",
+        "explanation": "Use 很 before this adjective predicate; no 是 is needed.",
+        "next": "step-3"
+      },
+      {
+        "id": "step-3",
+        "sentence": "people-sleepy",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: We are sleepy.",
+        "options": [
+          {
+            "sentence": "people-sleepy",
+            "correct": true,
+            "next": null
+          },
+          {
+            "sentence": "people-busy",
+            "correct": false,
+            "next": "help-3"
+          },
+          {
+            "sentence": "people-tall",
+            "correct": false,
+            "next": "help-3"
+          }
+        ]
+      },
+      {
+        "id": "help-3",
+        "sentence": "people-sleepy",
+        "speaker": "Guide",
+        "explanation": "我们 is plural. 很困 describes being sleepy, not being busy.",
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "cafe",
+    "lesson": "section:Lesson 3 · Daily words",
+    "title": "At a study café",
+    "context": "You are suggesting activities at a study café.",
+    "start": "step-1",
+    "nodes": [
+      {
+        "id": "step-1",
+        "sentence": "daily-coffee",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: Drink coffee.",
+        "options": [
+          {
+            "sentence": "daily-coffee",
+            "correct": true,
+            "next": "step-2"
+          },
+          {
+            "sentence": "daily-chinese",
+            "correct": false,
+            "next": "help-1"
+          },
+          {
+            "sentence": "daily-music",
+            "correct": false,
+            "next": "help-1"
+          }
+        ]
+      },
+      {
+        "id": "help-1",
+        "sentence": "daily-coffee",
+        "speaker": "Guide",
+        "explanation": "喝 combines with drinks such as 咖啡. This is a short imperative.",
+        "next": "step-2"
+      },
+      {
+        "id": "step-2",
+        "sentence": "daily-chinese",
+        "speaker": "Chen",
+        "prompt": "Choose the line that means: Study Chinese.",
+        "options": [
+          {
+            "sentence": "daily-chinese",
+            "correct": true,
+            "next": "step-3"
+          },
+          {
+            "sentence": "daily-coffee",
+            "correct": false,
+            "next": "help-2"
+          },
+          {
+            "sentence": "daily-music",
+            "correct": false,
+            "next": "help-2"
+          }
+        ]
+      },
+      {
+        "id": "help-2",
+        "sentence": "daily-chinese",
+        "speaker": "Guide",
+        "explanation": "学习 is followed by the subject being studied.",
+        "next": "step-3"
+      },
+      {
+        "id": "step-3",
+        "sentence": "daily-music",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: Listen to music.",
+        "options": [
+          {
+            "sentence": "daily-music",
+            "correct": true,
+            "next": null
+          },
+          {
+            "sentence": "daily-coffee",
+            "correct": false,
+            "next": "help-3"
+          },
+          {
+            "sentence": "daily-chinese",
+            "correct": false,
+            "next": "help-3"
+          }
+        ]
+      },
+      {
+        "id": "help-3",
+        "sentence": "daily-music",
+        "speaker": "Guide",
+        "explanation": "听 takes 音乐 directly; no Chinese equivalent of to is needed here.",
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "classroom",
+    "lesson": "section:Lesson 4 · Questions & everyday words",
+    "title": "A new classroom",
+    "context": "Help a new student identify people and objects, then go home.",
+    "start": "step-1",
+    "nodes": [
+      {
+        "id": "step-1",
+        "sentence": "questions-book",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: This is a book.",
+        "options": [
+          {
+            "sentence": "questions-book",
+            "correct": true,
+            "next": "step-2"
+          },
+          {
+            "sentence": "questions-teacher",
+            "correct": false,
+            "next": "help-1"
+          },
+          {
+            "sentence": "questions-home",
+            "correct": false,
+            "next": "help-1"
+          }
+        ]
+      },
+      {
+        "id": "help-1",
+        "sentence": "questions-book",
+        "speaker": "Guide",
+        "explanation": "这是 identifies an object: this + be + noun.",
+        "next": "step-2"
+      },
+      {
+        "id": "step-2",
+        "sentence": "questions-teacher",
+        "speaker": "Chen",
+        "prompt": "Choose the line that means: Who is the teacher?",
+        "options": [
+          {
+            "sentence": "questions-teacher",
+            "correct": true,
+            "next": "step-3"
+          },
+          {
+            "sentence": "questions-book",
+            "correct": false,
+            "next": "help-2"
+          },
+          {
+            "sentence": "questions-home",
+            "correct": false,
+            "next": "help-2"
+          }
+        ]
+      },
+      {
+        "id": "help-2",
+        "sentence": "questions-teacher",
+        "speaker": "Guide",
+        "explanation": "谁 stays in the subject position. This question does not use 吗.",
+        "next": "step-3"
+      },
+      {
+        "id": "step-3",
+        "sentence": "questions-home",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: The student goes home.",
+        "options": [
+          {
+            "sentence": "questions-home",
+            "correct": true,
+            "next": null
+          },
+          {
+            "sentence": "questions-book",
+            "correct": false,
+            "next": "help-3"
+          },
+          {
+            "sentence": "questions-teacher",
+            "correct": false,
+            "next": "help-3"
+          }
+        ]
+      },
+      {
+        "id": "help-3",
+        "sentence": "questions-home",
+        "speaker": "Guide",
+        "explanation": "回家 means go home. Place 学生 before the verb.",
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "store",
+    "lesson": "section:Lesson 5 · Numbers, money & dates",
+    "title": "Shopping and dates",
+    "context": "You ask about a price and read a calendar date.",
+    "start": "step-1",
+    "nodes": [
+      {
+        "id": "step-1",
+        "sentence": "dates-price",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: How much does it cost?",
+        "options": [
+          {
+            "sentence": "dates-price",
+            "correct": true,
+            "next": "step-2"
+          },
+          {
+            "sentence": "dates-three-yuan",
+            "correct": false,
+            "next": "help-1"
+          },
+          {
+            "sentence": "dates-march",
+            "correct": false,
+            "next": "help-1"
+          }
+        ]
+      },
+      {
+        "id": "help-1",
+        "sentence": "dates-price",
+        "speaker": "Guide",
+        "explanation": "多少钱 asks about a price. It is a complete question without 吗.",
+        "next": "step-2"
+      },
+      {
+        "id": "step-2",
+        "sentence": "dates-three-yuan",
+        "speaker": "Chen",
+        "prompt": "Choose the line that means: Three yuan.",
+        "options": [
+          {
+            "sentence": "dates-three-yuan",
+            "correct": true,
+            "next": "step-3"
+          },
+          {
+            "sentence": "dates-price",
+            "correct": false,
+            "next": "help-2"
+          },
+          {
+            "sentence": "dates-march",
+            "correct": false,
+            "next": "help-2"
+          }
+        ]
+      },
+      {
+        "id": "help-2",
+        "sentence": "dates-three-yuan",
+        "speaker": "Guide",
+        "explanation": "块 is the colloquial currency unit after the number.",
+        "next": "step-3"
+      },
+      {
+        "id": "step-3",
+        "sentence": "dates-march",
+        "speaker": "Lin",
+        "prompt": "Choose the line that means: March 5.",
+        "options": [
+          {
+            "sentence": "dates-march",
+            "correct": true,
+            "next": null
+          },
+          {
+            "sentence": "dates-price",
+            "correct": false,
+            "next": "help-3"
+          },
+          {
+            "sentence": "dates-three-yuan",
+            "correct": false,
+            "next": "help-3"
+          }
+        ]
+      },
+      {
+        "id": "help-3",
+        "sentence": "dates-march",
+        "speaker": "Guide",
+        "explanation": "Chinese dates put the month before the day. 号 is used for the day of the month.",
+        "next": null
+      }
+    ]
+  }
+]

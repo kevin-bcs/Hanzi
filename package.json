@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "start": "node scripts/serve.cjs",
-    "test": "node tests/regression.cjs && node --experimental-vm-modules tests/modules.test.cjs && node tests/readings.test.cjs && node tests/readings-audio.test.cjs",
+    "test": "node tests/regression.cjs && node --experimental-vm-modules tests/modules.test.cjs && node tests/readings.test.cjs && node tests/readings-audio.test.cjs && node tests/activities.test.cjs && node tests/practice-audio.test.cjs",
     "check": "node scripts/check.cjs",
-    "build:content": "node scripts/build-lessons.js && node scripts/build-content.js",
+    "build:content": "node scripts/build-lessons.js && node scripts/build-content.js && node scripts/build-exercises.js",
     "prestart": "npm run build:content",
     "build:lessons": "node scripts/build-lessons.js"
   },

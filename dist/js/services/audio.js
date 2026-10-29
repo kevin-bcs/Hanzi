@@ -12,7 +12,7 @@ export function chineseVoice() {
     window.speechSynthesis
       ?.getVoices()
       .find((v) => /^zh[-_](CN|Hans)/i.test(v.lang)) ||
-    window.speechSynthesis?.getVoices().find((v) => /^zh/i.test(v.lang))
+    window.speechSynthesis?.getVoices().find((v) => /^(zh[-_](TW|SG)|cmn)([-_]|$)/i.test(v.lang))
   );
 }
 
