@@ -14,7 +14,7 @@ import { startTone } from "../games/tone-drill.js";
 import { renderRows } from "../components/vocabulary-view.js";
 import { showSoundModes, startInitials } from "../games/initials-finals.js";
 import { renderLearningLevels } from "../components/lesson-view.js";
-import { renderProgress } from "../components/progress-view.js";
+import { renderProgress,updateStats } from "../components/progress-view.js";
 
 export function go(tab) {
   stopPracticeSession();
@@ -30,13 +30,15 @@ export function go(tab) {
     .forEach((s) => s.classList.toggle("hidden", s.id !== tab));
   document
     .querySelectorAll("[data-tab]")
-    .forEach((b) => b.classList.toggle("active", b.dataset.tab === tab));
+    .forEach((b) => {const active=b.dataset.tab===(tab==="practice"?"learning":tab);b.classList.toggle("active",active);b.setAttribute("aria-current",active?"page":"false")});
+  if (tab === "home") updateStats();
   if (tab === "learning") renderLearningCenter();
   if (tab === "progress") renderProgress();
   if (tab === "learn") renderLearningLevels();
   if (tab === "study") renderCard();
   if (tab === "words") renderRows();
   if (tab === "games") showGameHome();
+  const heading=$(tab)?.querySelectorAll("h2")[0];if(heading&&tab!=="practice"){heading.tabIndex=-1;heading.focus?.();}
 }
 
 export function resetGames() {

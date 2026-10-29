@@ -1,3 +1,4 @@
+import {recordLearningAttempt} from '../learning/srs.js';
 /** Hanzi Daily module: components/review.js. Public exports are consumed through explicit imports; mutable session state lives in app-state.js. */
 import { runtime } from "../state/app-state.js";
 import { $ } from "../config/constants.js";
@@ -81,6 +82,7 @@ export function rate(v) {
   runtime.current.due =
     Date.now() + (v === "again" ? 60000 : interval * 86400000);
   runtime.state.days[day()] = todayCount() + 1;
+  recordLearningAttempt(runtime.state,{id:"self-review:"+runtime.current.id,type:"self-review",wordIds:[runtime.current.id]},v!=="again",{assisted:true});
   save();
   renderCard();
 }

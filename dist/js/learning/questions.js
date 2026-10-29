@@ -1,3 +1,4 @@
+import {learningQuestionPriority} from './srs.js';
 import {exerciseContent} from '../data/generated-exercises.js';
 /** Shared deterministic contracts; randomization only changes item/option order, never language. */
 export const activityDefinitions = [
@@ -31,7 +32,7 @@ function practiceOptions(target,pool,field,random){
 }
 export function questionAccepted(q,response){return q.accepted.some(x=>practiceNormalize(x)===practiceNormalize(response))}
 export function questionFeedback(q){return {answer:q.answerLabel,pinyin:q.pinyin,meaning:q.meaning,explanation:q.explanation}}
-export function buildPracticeQuestions(type,words,lessonId='*',settings={},progress={},random=Math.random){
+export function buildPracticeQuestions(type,words,lessonId='*',settings={},progress={},random=Math.random,learning=null){
  const byId=new Map(words.map(w=>[w.id,w]));const sentences=exerciseContent.sentences.filter(s=>(lessonId==='*'||s.lesson===lessonId)&&s.tokens.every(id=>byId.has(id)));
  const result=[];
  const types=type==='personalized'?['choice','listening','translation','dictation','reading']:type==='timed'?['choice','translation','listening']:type==='mistakes'?['choice','listening','translation','dictation','builder','blanks','picture','reading','stories','roleplay']:[type];
@@ -86,20 +87,30 @@ export function buildPracticeQuestions(type,words,lessonId='*',settings={},progr
  if(type==='mistakes'){
   result.push(...buildPracticeQuestions('translation',words,lessonId,{direction:'en-zh'},progress,random),...buildPracticeQuestions('dictation',words,lessonId,{dictationInput:'pinyin'},progress,random),...buildPracticeQuestions('dictation',words,lessonId,{dictationInput:'characters'},progress,random));
  }
- if(type==='mistakes')return result.filter(q=>{const item=progress[q.id];return item ? item.errors>0&&(item.next||0)<=Date.now() : q.type==='choice'&&q.wordIds.some(id=>(words.find(w=>w.id===id)?.errors||0)>0)}).sort((a,b)=>practicePriority(b,words,progress)-practicePriority(a,words,progress));
+ if(type==='mistakes')return result.filter(q=>{const item=progress[q.id];return item ? item.errors>0&&(item.next||0)<=Date.now() : q.type==='choice'&&q.wordIds.some(id=>(words.find(w=>w.id===id)?.errors||0)>0)}).sort((a,b)=>practicePriority(b,words,progress,Date.now(),learning)-practicePriority(a,words,progress,Date.now(),learning));
  if(type==='personalized'){
-  const sorted=result.sort((a,b)=>practicePriority(b,words,progress)-practicePriority(a,words,progress));
+  const sorted=result.sort((a,b)=>practicePriority(b,words,progress,Date.now(),learning)-practicePriority(a,words,progress,Date.now(),learning));
   const groups=types.map(kind=>sorted.filter(q=>q.type===kind)),mixed=[];let previous='';
   while(groups.some(g=>g.length))for(const group of groups){if(!group.length)continue;let at=group.findIndex(q=>q.wordIds.join('|')!==previous);if(at<0)at=0;const [q]=group.splice(at,1);mixed.push(q);previous=q.wordIds.join('|')}
   return mixed;
  }
  return practiceShuffle(result,random);
 }
-export function practicePriority(q,words,items,now=Date.now()){
+export function practicePriority(q,words,items,now=Date.now(),learning=null){
  const item=items[q.id]||{},mistakes=item.errors||0,correct=item.correct||0;
  const due=q.wordIds.reduce((n,id)=>{const w=words.find(x=>x.id===id);return n+(w&&(w.due||0)<=now?2:0)+(w?.errors||0)},0);
  const recent=item.last?Math.max(0,1-(now-item.last)/604800000):0;
- return due+Math.min(mistakes,10)*3-Math.min(correct,10)+(mistakes?recent*2:0)-(item.next>now?20:0);
+ return learningQuestionPriority(q,learning,now)+due+Math.min(mistakes,10)*3-Math.min(correct,10)+(mistakes?recent*2:0)-(item.next>now?20:0);
 }
 
 export function practiceDifference(expected,received){const a=Array.from(practiceNormalize(expected)),b=Array.from(practiceNormalize(received));const index=a.findIndex((char,i)=>char!==b[i]);const at=index<0?Math.min(a.length,b.length):index;return 'Ignoring spaces and punctuation, position '+(at+1)+': expected '+(a[at]||'(end)')+', received '+(b[at]||'(missing)')+'.'}
+
+/** Menu eligibility reuses a few shared pools instead of generating all fifteen sessions. */
+export function practiceAvailability(words,lessonId='*',items={}){
+ const ids=new Set(words.map(w=>w.id)),sentences=exerciseContent.sentences.filter(s=>(lessonId==='*'||s.lesson===lessonId)&&s.tokens.every(id=>ids.has(id)));
+ const choice=buildPracticeQuestions('choice',words,lessonId).length,listening=buildPracticeQuestions('listening',words,lessonId).length,dictation=buildPracticeQuestions('dictation',words,lessonId).length;
+ const scopes=new Set(sentences.map(s=>s.lesson));
+ const scene=exerciseContent.scenarios.filter(s=>scopes.has(s.lesson)&&exerciseContent.sentences.filter(x=>x.lesson===s.lesson).every(x=>x.tokens.every(id=>ids.has(id)))).length;
+ const reading=exerciseContent.readings.filter(r=>scopes.has(r.lesson)&&r.turns.every(t=>sentences.some(s=>s.id===t.id))).length;
+ return {choice,matching:words.length>=6?words.length:0,listening,speaking:words.length,builder:sentences.length,blanks:words.length>=4?sentences.length:0,translation:words.length,dictation,picture:buildPracticeQuestions('picture',words,lessonId).length,reading,stories:scene,roleplay:scene,mistakes:buildPracticeQuestions('mistakes',words,lessonId,{},items).length,timed:choice+listening,personalized:choice+listening+dictation};
+}

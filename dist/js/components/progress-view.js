@@ -1,3 +1,4 @@
+import {renderLearningDashboard,renderLearningDetails} from '../learning/dashboard.js';
 /** Hanzi Daily module: components/progress-view.js. Public exports are consumed through explicit imports; mutable session state lives in app-state.js. */
 import { runtime } from "../state/app-state.js";
 import { $ } from "../config/constants.js";
@@ -8,6 +9,7 @@ export function todayCount() {
 }
 
 export function updateStats() {
+  renderLearningDashboard($("homeLearning"),runtime.state);
   $("wordCount").textContent = runtime.state.words.length;
   $("dueCount").textContent = runtime.state.words.filter(
     (w) => (w.due || 0) <= Date.now(),
@@ -19,6 +21,7 @@ export function updateStats() {
 }
 
 export function renderProgress() {
+  renderLearningDetails($("learningProgress"),runtime.state);
   const seen = Object.keys(runtime.state.learned || {}).length;
   $("progressSummary").textContent =
     seen +

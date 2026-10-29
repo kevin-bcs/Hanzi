@@ -4,7 +4,8 @@
     name="viewport"
     content="width=device-width,initial-scale=1"
   /><title>Hanzi Daily — A little Chinese, every day</title
-  ><link rel="stylesheet" href="css/main.css" /><link rel="stylesheet" href="css/readings.css" />
+  ><link rel="stylesheet" href="css/main.css" /><link rel="stylesheet" href="css/readings.css" /><link rel="stylesheet" href="css/learning.css" />
+  <a class="skip-link" href="#mainContent">Skip to learning content</a>
   <header>
     <div class="brand"><span class="seal">字</span>Hanzi Daily</div>
     <nav aria-label="Main navigation"><button data-tab="readings">Readings</button>
@@ -18,7 +19,7 @@
     </nav>
     <span class="small">Your Chinese, one word at a time.</span>
   </header>
-  <main>
+  <main id="mainContent" tabindex="-1">
     <p id="storageWarning" class="notice hidden" role="alert">
       Browser storage is unavailable. Export a backup before closing this page.
     </p>
@@ -39,7 +40,7 @@
       <h2>A lesson at a time.</h2>
       <p>
         Choose a level, explore its lessons, study the vocabulary, then practice
-        in four independent games. No locked levels.
+        with fifteen activities. No locked levels.
       </p>
       <div class="toolbar">
         <button class="primary" data-tab="learning">Start learning</button
@@ -50,13 +51,16 @@
         Your content and progress stay in this browser. No account or shared
         classroom storage is connected.
       </p>
+      <div id="homeLearning"></div>
+      <button class="primary" id="dailyPractice">Daily practice · 5 questions</button>
     </section>
     <section id="practice" class="hidden" aria-label="Learning activity"></section>
     <section id="learning" class="hidden" aria-labelledby="learningTitle">
       <span class="eyebrow">YOUR LESSONS. YOUR PACE.</span>
       <h2 id="learningTitle">Learning Center — <span lang="zh-CN">学习中心</span></h2>
       <p>Choose a lesson, then study or practice its vocabulary. All Lessons includes your full collection.</p>
-      <p class="small">Progress counts words viewed, not mastery. Choose All 15 activities to explore listening, writing, stories and adaptive practice.</p>
+      <p class="small">Mastery uses spaced evidence; viewing a word alone does not establish it. Choose an activity to explore listening, writing, stories and adaptive practice.</p>
+      <div id="learningSummary"></div>
       <div id="learningCards" class="learning-grid"></div>
     </section>
     <section id="learn" class="hidden panel">
@@ -85,7 +89,8 @@
     </section>
     <section id="progress" class="hidden panel">
       <h2>Your progress</h2>
-      <p id="progressSummary"></p>
+      <div id="learningProgress"></div>
+      <h3>Activity history</h3><p id="progressSummary"></p>
       <div id="progressRows"></div>
       <button data-tab="learn">Continue learning</button>
     </section>

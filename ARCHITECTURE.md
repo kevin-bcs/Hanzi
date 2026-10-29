@@ -66,3 +66,6 @@ Hanzi Daily module: utils.js. Public exports are consumed through explicit impor
 
 # Learning Center (Phases 1–4)
 `dist/js/learning/center.js` connects lesson selection to existing study/game engines. `activities.js` owns settings, question presentation, branches and session lifecycle. `questions.js` is the shared pure question/answer planner; `history.js` owns additive bounded practice history; `practice-audio.js` resolves verified audio completion for safe clocks. `content-validator.js` validates authored lesson-bound sentences and finite branches. `scripts/build-exercises.js` generates reader objects and `data/generated-exercises.js` from `content/exercises/`. The existing Interactive Reader supports a Learning Center host without duplicating the reader engine. See `docs/LEARNING_CENTER.md`.
+
+# Learning Center (Phases 5–6)
+`learning/srs.js` owns additive, validated gamification and independent skill schedules; `learning/history.js` connects attempts/completions without changing legacy schedules. `learning/dashboard.js` renders reusable home/progress summaries and skill tables. `css/learning.css` contains responsive Learning Center styles and accessibility states. The original storage key and backup/restore contract remain unchanged; see `docs/LEARNING_CENTER.md` for algorithms, reward limits and migration behavior.

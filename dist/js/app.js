@@ -1,3 +1,5 @@
+import {ensureLearning,validateLearningData} from './learning/srs.js';
+import {showDailyPractice} from './learning/activities.js';
 /** Composition root. Imports feature contracts and binds UI events only after module initialization.
  * Initialization order is intentionally retained to preserve saved-data migration and event behavior. */
 import { runtime } from "./state/app-state.js";
@@ -46,6 +48,8 @@ try {
     if (!old || !Array.isArray(old.words)) throw Error("Invalid stored data");
     if (!localStorage.getItem(KEY + "-before-v4"))
       localStorage.setItem(KEY + "-before-v4", rawSaved);
+    if(old.learning!==undefined)validateLearningData(old.learning);
+    if(old.learning===undefined&&!localStorage.getItem(KEY+'-before-learning-v1'))localStorage.setItem(KEY+'-before-learning-v1',rawSaved);
     runtime.state = {
       ...runtime.state,
       ...old,
@@ -70,6 +74,7 @@ runtime.state.words = runtime.state.words.filter(
     typeof w.meaning === "string",
 );
 mergeStarter();
+ensureLearning(runtime.state);
 runtime.seenIds = new Set();
 for (const w of runtime.state.words) {
   if (!w.id || runtime.seenIds.has(w.id)) w.id = crypto.randomUUID();
@@ -253,3 +258,5 @@ $("chooseFinals").onclick = () => configureSounds("finals");
 $("soundModeBack").onclick = showSoundModes;
 
 $("memoryFormat").onchange = updateCardOptions;
+
+$("dailyPractice").onclick=()=>showDailyPractice();

@@ -211,6 +211,7 @@ export function flip(i) {
       $("turnClock").textContent = "Finished";
     } else memoryTurn();
   } else {
+    for(const word of [a.word,b.word])recordPracticeAttempt(runtime.state,{id:'matching:'+word.id,type:'matching',wordIds:[word.id]},false,{lesson:$("memorySection").value==='*'?'*':'section:'+$("memorySection").value});
     markError(a.word);markError(b.word);
     const epoch = runtime.gameEpoch;
     runtime.gameDelay = setTimeout(() => {

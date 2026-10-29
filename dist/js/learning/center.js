@@ -1,3 +1,6 @@
+import {renderLearningDashboard} from './dashboard.js';
+import {lessonLearningSummary} from './srs.js';
+import {practiceAvailability} from './questions.js';
 import {showActivityMenu} from './activities.js';
 /** One catalog and selection bridge; existing activity engines retain their settings. */
 import {runtime} from '../state/app-state.js';
@@ -10,24 +13,27 @@ import {renderLessonButtons} from '../components/content-selectors.js';
 import {updateCardOptions} from '../games/memory.js';
 
 export function renderLearningCenter() {
+  renderLearningDashboard($('learningSummary'),runtime.state);
   const host = $('learningCards'); host.replaceChildren();
   const lessons = [...centralLessons(contentLessons), null];
   for (const lesson of lessons) {
     const words = lessonWords(runtime.state.words, lesson);
     const summary = lessonOverview(words, runtime.state.learned);
+    const available=practiceAvailability(words,lesson?.id||'*',runtime.state.practice?.items||{});
+    const eligible=Object.keys(available).filter(id=>available[id]>0||runtime.state.learning.completed[lesson?.id||'*']?.[id]);
+    const mastery=lessonLearningSummary(runtime.state,words,lesson?.id||'*',eligible);
     const card = document.createElement('article'); card.className = 'panel learning-card';
     const heading = document.createElement('h3'); heading.textContent = lesson?.title || 'All Lessons';
     const count = document.createElement('p'); count.className = 'small';
     count.textContent = summary.total+' words · '+summary.due+' ready to review';
-    const progress = document.createElement('progress'); progress.max = 100; progress.value = summary.percent;
-    progress.setAttribute('aria-label', (lesson?.title || 'All Lessons')+' vocabulary viewed');
+    const progress = document.createElement('progress'); progress.max = 100; progress.value = mastery.progress;
+    progress.setAttribute('aria-label', (lesson?.title || 'All Lessons')+' learning progress');
     const label = document.createElement('p'); label.className = 'small';
-    label.textContent = summary.viewed+' / '+summary.total+' words viewed · '+summary.percent+'%';
+    label.textContent = 'Learning progress '+mastery.progress+'% · Mastery '+mastery.mastery+'% · '+mastery.completed+' / '+mastery.available+' available activities completed. '+summary.viewed+' / '+summary.total+' words viewed.';
     const actions = document.createElement('div'); actions.className = 'learning-actions';
     for (const [type, title, enabled] of [
-      ['learn','Study vocabulary',words.length>0], ['study','Spaced review',words.length>0],
-      ['quiz','Multiple Choice',summary.choices>=4], ['memory','Word Matching',summary.pairs>=3],
-      ['tone','Tone Drill',words.length>0], ['activities','All 15 activities',words.length>0]]) {
+      ['learn','Study vocabulary',words.length>0], ['study','Flashcard review',words.length>0],
+      ['activities','Choose an activity',words.length>0]]) {
       const button = document.createElement('button'); button.textContent = title; button.disabled = !enabled;
       if (!enabled) button.title = type==='quiz' ? 'Needs four distinct meanings in this selection.' : 'Not enough vocabulary for this activity.';
       button.onclick = () => launchLearningActivity(type, lesson);

@@ -43,13 +43,20 @@ function load(file){file=path.resolve(file);if(!cache.has(file))cache.set(file,n
  button(wrongLine.text).click();button('Continue').click();assert(host.querySelectorAll('h3').some(n=>n.textContent?.startsWith('Try this line:')));button('Continue').click();button('End session').click();
  assert.equal(runtime.state.practice.items['roleplay:'+scene.id+':'+node.id].errors,1);
  // Timed audio latency never spends answering time; stale audio cannot score after navigation.
- const utterances=[];context.window.speechSynthesis={getVoices:()=>[{lang:'zh-CN'}],speak:u=>utterances.push(u),cancel:()=>{}};context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};
+ const utterances=[];context.window.speechSynthesis={getVoices:()=>[{lang:'zh-CN'}],speak:u=>utterances.push(u),cancel:()=>{}};context.speechSynthesis=context.window.speechSynthesis;context.SpeechSynthesisUtterance=class{constructor(text){this.text=text}};
  activities.showActivitySettings('timed');button('Start activity').click();const tick=app.timers[app.timers.length-1];
  let play=button('Play / Repeat audio');while(!play){button('Skip without penalty').click();play=button('Play / Repeat audio')}const pending=play.onclick();app.advance(61000);tick();assert(button('End session'));utterances.at(-1).onend();await pending;
  app.advance(61000);tick();assert(host.querySelectorAll('h2').some(n=>n.textContent==='Session results'));
  const count=runtime.state.practice.sessions.length;tick();assert.equal(runtime.state.practice.sessions.length,count);
  const memory=load('dist/js/games/memory.js').namespace;context.document.getElementById('memorySection').value=lessons[0].section;context.document.getElementById('memoryFormat').value='hanzi-pinyin';
  assert(memory.memoryPool().every(w=>!['v1','v2'].includes(w.id)));
+ const router=load('dist/js/navigation/router.js').namespace;
+ router.go('progress');assert.equal(context.document.getElementById('learningProgress').querySelectorAll('table').length,1);
+ const before=app.storage.get('hanzi-daily-v1'),corrupt=JSON.parse(before);corrupt.learning.xp=-1;
+ assert.throws(()=>load('dist/js/services/storage.js').namespace.restoreBackup(corrupt));assert.equal(app.storage.get('hanzi-daily-v1'),before);
+ const xp=runtime.state.learning.xp;context.document.getElementById('dailyPractice').click();assert.equal(host.querySelectorAll('select')[0].value,'5');
+ button('Start activity').click();assert.equal(host.querySelectorAll('progress')[0].max,5);router.go('home');assert.equal(runtime.state.learning.xp,xp);
+ assert(context.document.getElementById('homeLearning').querySelectorAll('strong').some(n=>n.textContent===String(xp)));
  assert(JSON.parse(app.storage.get('hanzi-daily-v1')).practice);
- console.log('PASS native ES module graph; 15 activity menus; single-answer scoring; missing-audio skip; authored word bank; reader comprehension; roleplay recovery; audio-excluded timing; unambiguous pinyin matching; persisted practice history');
+ console.log('PASS native ES module graph; 15 activity menus; single-answer scoring; missing-audio skip; authored word bank; reader comprehension; roleplay recovery; audio-excluded timing; unambiguous pinyin matching; persisted practice history, skill dashboard, daily practice and atomic learning backup rejection');
 })().catch(e=>{console.error(e);process.exitCode=1});

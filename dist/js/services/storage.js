@@ -1,3 +1,4 @@
+import {validateLearningData} from '../learning/srs.js';
 /** Persistence contract: keep hanzi-daily-v1 and all backup fields compatible. Restoration is explicit and snapshot-protected. */
 import { runtime } from "../state/app-state.js";
 import { $, KEY } from "../config/constants.js";
@@ -116,6 +117,7 @@ export function importData(d) {
 }
 
 export function validateBackup(d) {
+  if(d?.learning!==undefined) validateLearningData(d.learning);
   if (!d || !Array.isArray(d.words) || d.words.length > 10000)
     throw Error("Backup must contain a words array (maximum 10,000).");
   const ids = new Set();

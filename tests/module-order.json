@@ -1,10 +1,12 @@
 [
+  "dist/js/learning/srs.js",
   "dist/js/data/generated-content.js",
   "dist/js/config/constants.js",
   "dist/js/utils.js",
   "dist/js/services/storage.js",
   "dist/js/data/lessons.js",
   "dist/js/components/content-selectors.js",
+  "dist/js/learning/dashboard.js",
   "dist/js/components/progress-view.js",
   "dist/js/components/review.js",
   "dist/js/services/audio.js",

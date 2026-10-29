@@ -1,3 +1,4 @@
+import {recordPracticeAttempt,recordPracticeSession} from '../learning/history.js';
 /** Hanzi Daily module: games/quick-choice.js. Public exports are consumed through explicit imports; mutable session state lives in app-state.js. */
 import { runtime } from "../state/app-state.js";
 import { $ } from "../config/constants.js";
@@ -27,6 +28,7 @@ export function startQuiz() {
     0,
     Math.min(Number($("quizCount").value), runtime.quizList.length),
   );
+  runtime.quizSessionId = crypto.randomUUID();
   runtime.quizAt = 0;
   runtime.quizScore = 0;
   runtime.quizStarted = Date.now();
@@ -44,6 +46,7 @@ export function showQuiz() {
   }
   if (runtime.quizAt >= runtime.quizList.length) {
     const seconds = Math.round((Date.now() - runtime.quizStarted) / 1000);
+    recordPracticeSession(runtime.state,{id:runtime.quizSessionId,activity:'choice',lesson:$("quizSection").value==='*'?'*':'section:'+$("quizSection").value,date:new Date().toISOString(),completed:true,correct:runtime.quizScore,wrong:runtime.quizList.length-runtime.quizScore});
     recordResult("quiz", {
       correct: runtime.quizScore,
       wrong: runtime.quizList.length - runtime.quizScore,
@@ -98,6 +101,7 @@ export function showQuiz() {
     answered = true;
     stopTimers();
     const correct = x?.id === w.id;
+    recordPracticeAttempt(runtime.state,{id:'choice:'+w.id,type:'choice',wordIds:[w.id]},correct,{lesson:$("quizSection").value==='*'?'*':'section:'+$("quizSection").value});
     if (correct) {
       runtime.quizScore++;
       runtime.state.games.quiz = (runtime.state.games.quiz || 0) + 1;
