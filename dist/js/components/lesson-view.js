@@ -22,6 +22,8 @@ export function renderLearningLevels() {
 export function renderLearningLessons() {
   const selected = $("learnLesson").value;
   $("learnLesson").replaceChildren();
+  const allOption = document.createElement("option"); allOption.value = "*"; allOption.textContent = "All Lessons";
+  $("learnLesson").append(allOption);
   for (const l of contentModel().lessons.filter(
     (l) => l.level === $("learnLevel").value,
   )) {
@@ -36,9 +38,10 @@ export function renderLearningLessons() {
 }
 
 export function loadLearningLesson() {
+  runtime.learningAll = $("learnLesson").value === "*";
   runtime.learningAt = 0;
   const lesson = selectedLesson();
-  runtime.learningWords = lesson
+  runtime.learningWords = runtime.learningAll ? [...runtime.state.words] : lesson
     ? runtime.state.words.filter((w) => inSection(w, lesson.section))
     : [];
   renderLearningWord();
@@ -46,6 +49,7 @@ export function loadLearningLesson() {
 
 export function renderLearningWord() {
   const w = runtime.learningWords[runtime.learningAt];
+  const old=document.getElementById('learnIllustration');if(old)old.remove();if(w?.image){const image=document.createElement('img');image.id='learnIllustration';image.src=w.image;image.alt=w.imageAlt||w.meaning;image.width=180;image.height=170;image.loading='lazy';image.onerror=()=>image.remove();$('learnHanzi').before(image);}
   $("learnHanzi").textContent = w?.hanzi || "No content yet";
   $("learnPinyin").textContent = w?.pinyin || "";
   $("learnMeaning").textContent = w?.meaning || "";

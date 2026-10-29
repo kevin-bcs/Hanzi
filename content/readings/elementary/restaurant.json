@@ -1,0 +1,368 @@
+{
+  "id": "restaurant",
+  "title": "Ordering rice",
+  "titleHanzi": "点米饭",
+  "category": "restaurant",
+  "level": "elementary",
+  "description": "Ordering rice. Read the conversation and listen to each speaker.",
+  "speakers": [
+    {
+      "id": "a",
+      "name": "Lin"
+    },
+    {
+      "id": "b",
+      "name": "Chen"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "speaker": "a",
+      "order": 1,
+      "text": "你想吃什么？",
+      "translation": "What would you like to eat?",
+      "units": [
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "gloss": "you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "想",
+          "pinyin": "xiǎng",
+          "gloss": "would like",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            }
+          ]
+        },
+        {
+          "hanzi": "吃",
+          "pinyin": "chī",
+          "gloss": "eat",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "吃",
+              "pinyin": "chī"
+            }
+          ]
+        },
+        {
+          "hanzi": "什么",
+          "pinyin": "shén me",
+          "gloss": "what",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "什",
+              "pinyin": "shén"
+            },
+            {
+              "hanzi": "么",
+              "pinyin": "me"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "speaker": "b",
+      "order": 2,
+      "text": "我想要一份米饭。",
+      "translation": "I would like one serving of rice.",
+      "units": [
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "gloss": "I",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "想",
+          "pinyin": "xiǎng",
+          "gloss": "would like",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "想",
+              "pinyin": "xiǎng"
+            }
+          ]
+        },
+        {
+          "hanzi": "要",
+          "pinyin": "yào",
+          "gloss": "have",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "要",
+              "pinyin": "yào"
+            }
+          ]
+        },
+        {
+          "hanzi": "一",
+          "pinyin": "yí",
+          "gloss": "one",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "一",
+              "pinyin": "yí"
+            }
+          ]
+        },
+        {
+          "hanzi": "份",
+          "pinyin": "fèn",
+          "gloss": "portion classifier",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "份",
+              "pinyin": "fèn"
+            }
+          ]
+        },
+        {
+          "hanzi": "米饭",
+          "pinyin": "mǐ fàn",
+          "gloss": "cooked rice",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "米",
+              "pinyin": "mǐ"
+            },
+            {
+              "hanzi": "饭",
+              "pinyin": "fàn"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "speaker": "a",
+      "order": 3,
+      "text": "你要茶吗？",
+      "translation": "Would you like tea?",
+      "units": [
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "gloss": "you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "要",
+          "pinyin": "yào",
+          "gloss": "want",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "要",
+              "pinyin": "yào"
+            }
+          ]
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "gloss": "tea",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "茶",
+              "pinyin": "chá"
+            }
+          ]
+        },
+        {
+          "hanzi": "吗",
+          "pinyin": "ma",
+          "gloss": "question particle",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "吗",
+              "pinyin": "ma"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "speaker": "b",
+      "order": 4,
+      "text": "要，一共多少钱？",
+      "translation": "Yes, how much is it in total?",
+      "units": [
+        {
+          "hanzi": "要",
+          "pinyin": "yào",
+          "gloss": "yes, I would",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "要",
+              "pinyin": "yào"
+            }
+          ]
+        },
+        {
+          "hanzi": "，",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "一共",
+          "pinyin": "yí gòng",
+          "gloss": "in total",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "一",
+              "pinyin": "yí"
+            },
+            {
+              "hanzi": "共",
+              "pinyin": "gòng"
+            }
+          ]
+        },
+        {
+          "hanzi": "多少",
+          "pinyin": "duō shao",
+          "gloss": "how much",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "多",
+              "pinyin": "duō"
+            },
+            {
+              "hanzi": "少",
+              "pinyin": "shao"
+            }
+          ]
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "gloss": "money",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "钱",
+              "pinyin": "qián"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What food is ordered?",
+      "options": [
+        "Rice",
+        "Bread",
+        "Noodles"
+      ],
+      "answer": 0,
+      "explanation": "Chen orders 米饭.",
+      "evidence": [
+        "t2"
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "How many portions?",
+      "options": [
+        "One",
+        "Two",
+        "Three"
+      ],
+      "answer": 0,
+      "explanation": "一份 means one portion.",
+      "evidence": [
+        "t2"
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Chen ask at the end?",
+      "options": [
+        "The total price",
+        "The address",
+        "The time"
+      ],
+      "answer": 0,
+      "explanation": "一共多少钱 asks the total price.",
+      "evidence": [
+        "t4"
+      ]
+    }
+  ],
+  "version": 1
+}

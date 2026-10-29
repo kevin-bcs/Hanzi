@@ -1,12 +1,17 @@
 {
-  "name":"hanzi-daily",
-  "version":"1.0.0",
-  "private":true,
-  "type":"module",
-  "scripts":{
-    "start":"node scripts/serve.cjs",
-    "test":"node tests/regression.cjs && node --experimental-vm-modules tests/modules.test.cjs",
-    "check":"node scripts/check.cjs"
+  "name": "hanzi-daily",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "test": "node tests/regression.cjs && node --experimental-vm-modules tests/modules.test.cjs && node tests/readings.test.cjs && node tests/readings-audio.test.cjs",
+    "check": "node scripts/check.cjs",
+    "build:content": "node scripts/build-lessons.js && node scripts/build-content.js",
+    "prestart": "npm run build:content",
+    "build:lessons": "node scripts/build-lessons.js"
   },
-  "engines":{"node":">=20"}
+  "engines": {
+    "node": ">=20"
+  }
 }

@@ -36,10 +36,7 @@ import {
   renderLearningLevels,
   renderLearningWord,
 } from "./components/lesson-view.js";
-import {
-  applyLessonFile,
-  validateLessonFile,
-} from "./services/lesson-import.js";
+
 runtime.storageBlocked = false;
 runtime.state = { words: [], days: {}, games: {}, results: [], version: 4 };
 try {
@@ -144,46 +141,6 @@ runtime.toneMode = "any";
 runtime.toneRounds = 0;
 $("search").oninput = renderRows;
 $("wordFilter").onchange = renderRows;
-$("addForm").onsubmit = (e) => {
-  e.preventDefault();
-  let v = Object.fromEntries(new FormData(e.target));
-  for (let k in v) v[k] = v[k].trim();
-  if (!v.hanzi || !v.pinyin || !v.meaning || !v.section) {
-    $("saved").textContent = "Please complete all required fields.";
-    return;
-  }
-  const existing = runtime.state.words.find((w) => w.hanzi === v.hanzi);
-  if (existing && !inSection(existing, v.section)) {
-    existing.sections = [...memberships(existing), v.section];
-    save();
-    fillSelect($("studyFilter"));
-    fillGameSections();
-    fillSelect($("wordFilter"));
-    $("saved").textContent =
-      "Existing word added to this section; progress preserved.";
-    return;
-  }
-  if (existing) {
-    $("saved").textContent = "This word is already in this section.";
-    return;
-  }
-  runtime.state.deleted = runtime.state.deleted.filter((h) => h !== v.hanzi);
-  runtime.state.words.push({
-    ...v,
-    id: crypto.randomUUID(),
-    category: "custom",
-    due: 0,
-    interval: 0,
-    errors: 0,
-  });
-  save();
-  e.target.reset();
-  $("saved").textContent = "Added and ready to practice.";
-  fillSelect($("studyFilter"));
-  fillGameSections();
-  fillSelect($("wordFilter"));
-  updateStats();
-};
 $("export").onclick = exportBackup;
 $("importBtn").onclick = () => $("import").click();
 $("import").onchange = async (e) => {
@@ -223,7 +180,7 @@ runtime.soundMode = "initials";
 runtime.soundRound = null;
 runtime.learningWords = [];
 runtime.learningAt = 0;
-runtime.pendingContent = null;
+
 $("learnLevel").onchange = renderLearningLessons;
 $("learnLesson").onchange = loadLearningLesson;
 $("learnPrevious").onclick = () => {
@@ -240,46 +197,12 @@ $("learnVoice").onclick = () =>
   say(runtime.learningWords[runtime.learningAt].hanzi);
 $("learnPractice").onclick = () => {
   const lesson = selectedLesson();
+  const practiceSection = runtime.learningAll ? "*" : lesson?.section;
   go("games");
   for (const type of ["memory", "quiz", "tone"])
-    $(type + "Section").value = lesson.section;
+    $(type + "Section").value = practiceSection;
   renderLessonButtons("memory");
   renderLessonButtons("quiz");
-};
-$("contentFile").onchange = async (e) => {
-  runtime.pendingContent = null;
-  $("applyContent").disabled = true;
-  try {
-    const f = e.target.files[0];
-    if (!f) return;
-    if (f.size > 2000000) throw Error("Maximum file size: 2 MB");
-    const r = validateLessonFile(JSON.parse(await f.text()));
-    runtime.pendingContent = r;
-    $("contentReport").textContent =
-      r.items.length +
-      " new entries · " +
-      r.duplicates.length +
-      " duplicates or shared entries · " +
-      r.errors.length +
-      " errors\n" +
-      r.errors.join("\n");
-    $("applyContent").disabled = !!r.errors.length;
-  } catch (err) {
-    $("contentReport").textContent = err.message;
-  }
-};
-$("applyContent").onclick = () => {
-  if (!runtime.pendingContent || runtime.pendingContent.errors.length) return;
-  if (!confirm("Import this validated content into this browser only?")) return;
-  try {
-    applyLessonFile(runtime.pendingContent);
-    runtime.pendingContent = null;
-    $("applyContent").disabled = true;
-    $("contentReport").textContent =
-      "Content imported locally. New levels and lessons are ready.";
-  } catch (e) {
-    $("contentReport").textContent = e.message;
-  }
 };
 $("import").onchange = async (e) => {
   try {

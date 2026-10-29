@@ -1,3 +1,4 @@
+import {contentLessons} from "./vocabulary.js";
 /** Hanzi Daily module: data/lessons.js. Public exports are consumed through explicit imports; mutable session state lives in app-state.js. */
 import { runtime } from "../state/app-state.js";
 import { $ } from "../config/constants.js";
@@ -22,7 +23,8 @@ export function contentModel() {
         title: section,
         section,
       });
-  return { levels: runtime.state.levels, lessons: runtime.state.lessons };
+  const custom = runtime.state.lessons.filter(l=>!l.id.startsWith("section:"));
+  return { levels: runtime.state.levels, lessons: [...contentLessons, ...custom.filter(l=>!contentLessons.some(c=>c.id===l.id))] };
 }
 
 export function selectedLesson() {

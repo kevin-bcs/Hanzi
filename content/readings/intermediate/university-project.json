@@ -1,0 +1,965 @@
+{
+  "id": "university-project",
+  "title": "Planning a university project",
+  "titleHanzi": "安排大学项目",
+  "category": "university-life",
+  "level": "intermediate",
+  "description": "Planning a university project. Read the conversation and listen to each speaker.",
+  "speakers": [
+    {
+      "id": "a",
+      "name": "Lin"
+    },
+    {
+      "id": "b",
+      "name": "Chen"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "speaker": "a",
+      "order": 1,
+      "text": "我们下星期五要交项目报告。",
+      "translation": "We need to submit the project report next Friday.",
+      "units": [
+        {
+          "hanzi": "我们",
+          "pinyin": "wǒ men",
+          "gloss": "we",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "们",
+              "pinyin": "men"
+            }
+          ]
+        },
+        {
+          "hanzi": "下",
+          "pinyin": "xià",
+          "gloss": "next",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "下",
+              "pinyin": "xià"
+            }
+          ]
+        },
+        {
+          "hanzi": "星期五",
+          "pinyin": "xīng qī wǔ",
+          "gloss": "Friday",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "星",
+              "pinyin": "xīng"
+            },
+            {
+              "hanzi": "期",
+              "pinyin": "qī"
+            },
+            {
+              "hanzi": "五",
+              "pinyin": "wǔ"
+            }
+          ]
+        },
+        {
+          "hanzi": "要",
+          "pinyin": "yào",
+          "gloss": "need to",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "要",
+              "pinyin": "yào"
+            }
+          ]
+        },
+        {
+          "hanzi": "交",
+          "pinyin": "jiāo",
+          "gloss": "submit",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "交",
+              "pinyin": "jiāo"
+            }
+          ]
+        },
+        {
+          "hanzi": "项目",
+          "pinyin": "xiàng mù",
+          "gloss": "project",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "项",
+              "pinyin": "xiàng"
+            },
+            {
+              "hanzi": "目",
+              "pinyin": "mù"
+            }
+          ]
+        },
+        {
+          "hanzi": "报告",
+          "pinyin": "bào gào",
+          "gloss": "report",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "报",
+              "pinyin": "bào"
+            },
+            {
+              "hanzi": "告",
+              "pinyin": "gào"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "speaker": "b",
+      "order": 2,
+      "text": "我们先分工吧。我负责收集数据。",
+      "translation": "Let us divide up the work first. I will collect the data.",
+      "units": [
+        {
+          "hanzi": "我们",
+          "pinyin": "wǒ men",
+          "gloss": "we",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            },
+            {
+              "hanzi": "们",
+              "pinyin": "men"
+            }
+          ]
+        },
+        {
+          "hanzi": "先",
+          "pinyin": "xiān",
+          "gloss": "first",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "先",
+              "pinyin": "xiān"
+            }
+          ]
+        },
+        {
+          "hanzi": "分工",
+          "pinyin": "fēn gōng",
+          "gloss": "divide the work",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "分",
+              "pinyin": "fēn"
+            },
+            {
+              "hanzi": "工",
+              "pinyin": "gōng"
+            }
+          ]
+        },
+        {
+          "hanzi": "吧",
+          "pinyin": "ba",
+          "gloss": "suggestion particle",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "吧",
+              "pinyin": "ba"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "gloss": "I",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "负责",
+          "pinyin": "fù zé",
+          "gloss": "be responsible for",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "负",
+              "pinyin": "fù"
+            },
+            {
+              "hanzi": "责",
+              "pinyin": "zé"
+            }
+          ]
+        },
+        {
+          "hanzi": "收集",
+          "pinyin": "shōu jí",
+          "gloss": "collect",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "收",
+              "pinyin": "shōu"
+            },
+            {
+              "hanzi": "集",
+              "pinyin": "jí"
+            }
+          ]
+        },
+        {
+          "hanzi": "数据",
+          "pinyin": "shù jù",
+          "gloss": "data",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "数",
+              "pinyin": "shù"
+            },
+            {
+              "hanzi": "据",
+              "pinyin": "jù"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "speaker": "a",
+      "order": 3,
+      "text": "好，我来分析数据和写报告。",
+      "translation": "Good, I will analyze the data and write the report.",
+      "units": [
+        {
+          "hanzi": "好",
+          "pinyin": "hǎo",
+          "gloss": "good",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "好",
+              "pinyin": "hǎo"
+            }
+          ]
+        },
+        {
+          "hanzi": "，",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "gloss": "I",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "来",
+          "pinyin": "lái",
+          "gloss": "take on",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "来",
+              "pinyin": "lái"
+            }
+          ]
+        },
+        {
+          "hanzi": "分析",
+          "pinyin": "fēn xī",
+          "gloss": "analyze",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "分",
+              "pinyin": "fēn"
+            },
+            {
+              "hanzi": "析",
+              "pinyin": "xī"
+            }
+          ]
+        },
+        {
+          "hanzi": "数据",
+          "pinyin": "shù jù",
+          "gloss": "data",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "数",
+              "pinyin": "shù"
+            },
+            {
+              "hanzi": "据",
+              "pinyin": "jù"
+            }
+          ]
+        },
+        {
+          "hanzi": "和",
+          "pinyin": "hé",
+          "gloss": "and",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "和",
+              "pinyin": "hé"
+            }
+          ]
+        },
+        {
+          "hanzi": "写",
+          "pinyin": "xiě",
+          "gloss": "write",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "写",
+              "pinyin": "xiě"
+            }
+          ]
+        },
+        {
+          "hanzi": "报告",
+          "pinyin": "bào gào",
+          "gloss": "report",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "报",
+              "pinyin": "bào"
+            },
+            {
+              "hanzi": "告",
+              "pinyin": "gào"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "speaker": "b",
+      "order": 4,
+      "text": "星期三下午在图书馆讨论结果，可以吗？",
+      "translation": "Can we discuss the results at the library on Wednesday afternoon?",
+      "units": [
+        {
+          "hanzi": "星期三",
+          "pinyin": "xīng qī sān",
+          "gloss": "Wednesday",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "星",
+              "pinyin": "xīng"
+            },
+            {
+              "hanzi": "期",
+              "pinyin": "qī"
+            },
+            {
+              "hanzi": "三",
+              "pinyin": "sān"
+            }
+          ]
+        },
+        {
+          "hanzi": "下午",
+          "pinyin": "xià wǔ",
+          "gloss": "afternoon",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "下",
+              "pinyin": "xià"
+            },
+            {
+              "hanzi": "午",
+              "pinyin": "wǔ"
+            }
+          ]
+        },
+        {
+          "hanzi": "在",
+          "pinyin": "zài",
+          "gloss": "at",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ]
+        },
+        {
+          "hanzi": "图书馆",
+          "pinyin": "tú shū guǎn",
+          "gloss": "library",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "图",
+              "pinyin": "tú"
+            },
+            {
+              "hanzi": "书",
+              "pinyin": "shū"
+            },
+            {
+              "hanzi": "馆",
+              "pinyin": "guǎn"
+            }
+          ]
+        },
+        {
+          "hanzi": "讨论",
+          "pinyin": "tǎo lùn",
+          "gloss": "discuss",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "讨",
+              "pinyin": "tǎo"
+            },
+            {
+              "hanzi": "论",
+              "pinyin": "lùn"
+            }
+          ]
+        },
+        {
+          "hanzi": "结果",
+          "pinyin": "jié guǒ",
+          "gloss": "results",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "结",
+              "pinyin": "jié"
+            },
+            {
+              "hanzi": "果",
+              "pinyin": "guǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "，",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "可以",
+          "pinyin": "kě yǐ",
+          "gloss": "can",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "可",
+              "pinyin": "kě"
+            },
+            {
+              "hanzi": "以",
+              "pinyin": "yǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "吗",
+          "pinyin": "ma",
+          "gloss": "question particle",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "吗",
+              "pinyin": "ma"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t5",
+      "speaker": "a",
+      "order": 5,
+      "text": "可以。请在星期二晚上之前把数据发给我。",
+      "translation": "Yes. Please send me the data before Tuesday evening.",
+      "units": [
+        {
+          "hanzi": "可以",
+          "pinyin": "kě yǐ",
+          "gloss": "yes, that works",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "可",
+              "pinyin": "kě"
+            },
+            {
+              "hanzi": "以",
+              "pinyin": "yǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "请",
+          "pinyin": "qǐng",
+          "gloss": "please",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "请",
+              "pinyin": "qǐng"
+            }
+          ]
+        },
+        {
+          "hanzi": "在",
+          "pinyin": "zài",
+          "gloss": "at",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ]
+        },
+        {
+          "hanzi": "星期二",
+          "pinyin": "xīng qī èr",
+          "gloss": "Tuesday",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "星",
+              "pinyin": "xīng"
+            },
+            {
+              "hanzi": "期",
+              "pinyin": "qī"
+            },
+            {
+              "hanzi": "二",
+              "pinyin": "èr"
+            }
+          ]
+        },
+        {
+          "hanzi": "晚上",
+          "pinyin": "wǎn shang",
+          "gloss": "evening",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "晚",
+              "pinyin": "wǎn"
+            },
+            {
+              "hanzi": "上",
+              "pinyin": "shang"
+            }
+          ]
+        },
+        {
+          "hanzi": "之前",
+          "pinyin": "zhī qián",
+          "gloss": "before",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "之",
+              "pinyin": "zhī"
+            },
+            {
+              "hanzi": "前",
+              "pinyin": "qián"
+            }
+          ]
+        },
+        {
+          "hanzi": "把",
+          "pinyin": "bǎ",
+          "gloss": "object-fronting marker",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "把",
+              "pinyin": "bǎ"
+            }
+          ]
+        },
+        {
+          "hanzi": "数据",
+          "pinyin": "shù jù",
+          "gloss": "data",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "数",
+              "pinyin": "shù"
+            },
+            {
+              "hanzi": "据",
+              "pinyin": "jù"
+            }
+          ]
+        },
+        {
+          "hanzi": "发",
+          "pinyin": "fā",
+          "gloss": "send",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "发",
+              "pinyin": "fā"
+            }
+          ]
+        },
+        {
+          "hanzi": "给",
+          "pinyin": "gěi",
+          "gloss": "to",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "给",
+              "pinyin": "gěi"
+            }
+          ]
+        },
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "gloss": "me",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t6",
+      "speaker": "b",
+      "order": 6,
+      "text": "没问题。我会先检查数据，再发给你。",
+      "translation": "No problem. I will check the data before sending it.",
+      "units": [
+        {
+          "hanzi": "没问题",
+          "pinyin": "méi wèn tí",
+          "gloss": "no problem",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "没",
+              "pinyin": "méi"
+            },
+            {
+              "hanzi": "问",
+              "pinyin": "wèn"
+            },
+            {
+              "hanzi": "题",
+              "pinyin": "tí"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "gloss": "I",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "会",
+          "pinyin": "huì",
+          "gloss": "will",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "会",
+              "pinyin": "huì"
+            }
+          ]
+        },
+        {
+          "hanzi": "先",
+          "pinyin": "xiān",
+          "gloss": "first",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "先",
+              "pinyin": "xiān"
+            }
+          ]
+        },
+        {
+          "hanzi": "检查",
+          "pinyin": "jiǎn chá",
+          "gloss": "check",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "检",
+              "pinyin": "jiǎn"
+            },
+            {
+              "hanzi": "查",
+              "pinyin": "chá"
+            }
+          ]
+        },
+        {
+          "hanzi": "数据",
+          "pinyin": "shù jù",
+          "gloss": "data",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "数",
+              "pinyin": "shù"
+            },
+            {
+              "hanzi": "据",
+              "pinyin": "jù"
+            }
+          ]
+        },
+        {
+          "hanzi": "，",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "再",
+          "pinyin": "zài",
+          "gloss": "then",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "再",
+              "pinyin": "zài"
+            }
+          ]
+        },
+        {
+          "hanzi": "发",
+          "pinyin": "fā",
+          "gloss": "send",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "发",
+              "pinyin": "fā"
+            }
+          ]
+        },
+        {
+          "hanzi": "给",
+          "pinyin": "gěi",
+          "gloss": "to",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "给",
+              "pinyin": "gěi"
+            }
+          ]
+        },
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "gloss": "you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "When is the report due?",
+      "options": [
+        "Next Friday",
+        "This Monday",
+        "Next Wednesday"
+      ],
+      "answer": 0,
+      "explanation": "Lin states 下星期五要交项目报告.",
+      "evidence": [
+        "t1"
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "Who collects the data?",
+      "options": [
+        "Chen",
+        "Lin",
+        "Their teacher"
+      ],
+      "answer": 0,
+      "explanation": "Chen takes responsibility for collecting data.",
+      "evidence": [
+        "t2"
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "Where will they discuss results?",
+      "options": [
+        "At the library",
+        "At home",
+        "In a restaurant"
+      ],
+      "answer": 0,
+      "explanation": "Chen proposes 图书馆.",
+      "evidence": [
+        "t4"
+      ]
+    },
+    {
+      "id": "q4",
+      "prompt": "When should the data be sent?",
+      "options": [
+        "Before Tuesday evening",
+        "Friday morning",
+        "After Wednesday"
+      ],
+      "answer": 0,
+      "explanation": "Lin requests 星期二晚上之前.",
+      "evidence": [
+        "t5"
+      ]
+    }
+  ],
+  "version": 1
+}

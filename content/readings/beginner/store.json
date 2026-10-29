@@ -1,0 +1,341 @@
+{
+  "id": "store",
+  "title": "Buying a pen",
+  "titleHanzi": "买笔",
+  "category": "store",
+  "level": "beginner",
+  "description": "Buying a pen. Read the conversation and listen to each speaker.",
+  "speakers": [
+    {
+      "id": "a",
+      "name": "Lin"
+    },
+    {
+      "id": "b",
+      "name": "Chen"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "speaker": "a",
+      "order": 1,
+      "text": "这支笔多少钱？",
+      "translation": "How much is this pen?",
+      "units": [
+        {
+          "hanzi": "这",
+          "pinyin": "zhè",
+          "gloss": "this",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            }
+          ]
+        },
+        {
+          "hanzi": "支",
+          "pinyin": "zhī",
+          "gloss": "pen classifier",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "支",
+              "pinyin": "zhī"
+            }
+          ]
+        },
+        {
+          "hanzi": "笔",
+          "pinyin": "bǐ",
+          "gloss": "pen",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "笔",
+              "pinyin": "bǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "多少",
+          "pinyin": "duō shao",
+          "gloss": "how much",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "多",
+              "pinyin": "duō"
+            },
+            {
+              "hanzi": "少",
+              "pinyin": "shao"
+            }
+          ]
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "gloss": "money",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "钱",
+              "pinyin": "qián"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "speaker": "b",
+      "order": 2,
+      "text": "五块钱。",
+      "translation": "Five yuan.",
+      "units": [
+        {
+          "hanzi": "五",
+          "pinyin": "wǔ",
+          "gloss": "five",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "五",
+              "pinyin": "wǔ"
+            }
+          ]
+        },
+        {
+          "hanzi": "块",
+          "pinyin": "kuài",
+          "gloss": "yuan",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "块",
+              "pinyin": "kuài"
+            }
+          ]
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "gloss": "money",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "钱",
+              "pinyin": "qián"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "speaker": "a",
+      "order": 3,
+      "text": "我要两支笔。",
+      "translation": "I would like two pens.",
+      "units": [
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "gloss": "I",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "要",
+          "pinyin": "yào",
+          "gloss": "want",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "要",
+              "pinyin": "yào"
+            }
+          ]
+        },
+        {
+          "hanzi": "两",
+          "pinyin": "liǎng",
+          "gloss": "two",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "两",
+              "pinyin": "liǎng"
+            }
+          ]
+        },
+        {
+          "hanzi": "支",
+          "pinyin": "zhī",
+          "gloss": "pen classifier",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "支",
+              "pinyin": "zhī"
+            }
+          ]
+        },
+        {
+          "hanzi": "笔",
+          "pinyin": "bǐ",
+          "gloss": "pen",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "笔",
+              "pinyin": "bǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "speaker": "b",
+      "order": 4,
+      "text": "一共十块钱。",
+      "translation": "Ten yuan in total.",
+      "units": [
+        {
+          "hanzi": "一共",
+          "pinyin": "yí gòng",
+          "gloss": "in total",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "一",
+              "pinyin": "yí"
+            },
+            {
+              "hanzi": "共",
+              "pinyin": "gòng"
+            }
+          ]
+        },
+        {
+          "hanzi": "十",
+          "pinyin": "shí",
+          "gloss": "ten",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "十",
+              "pinyin": "shí"
+            }
+          ]
+        },
+        {
+          "hanzi": "块",
+          "pinyin": "kuài",
+          "gloss": "yuan",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "块",
+              "pinyin": "kuài"
+            }
+          ]
+        },
+        {
+          "hanzi": "钱",
+          "pinyin": "qián",
+          "gloss": "money",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "钱",
+              "pinyin": "qián"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What is being bought?",
+      "options": [
+        "Pens",
+        "Books",
+        "Tea"
+      ],
+      "answer": 0,
+      "explanation": "They discuss 笔.",
+      "evidence": [
+        "t1"
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "Price of one pen?",
+      "options": [
+        "Five yuan",
+        "Ten yuan",
+        "Two yuan"
+      ],
+      "answer": 0,
+      "explanation": "五块钱 is five yuan.",
+      "evidence": [
+        "t2"
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "Total for two pens?",
+      "options": [
+        "Ten yuan",
+        "Five yuan",
+        "Twenty yuan"
+      ],
+      "answer": 0,
+      "explanation": "The last turn states 十块钱.",
+      "evidence": [
+        "t4"
+      ]
+    }
+  ],
+  "version": 1
+}

@@ -1,0 +1,378 @@
+{
+  "id": "mall",
+  "title": "Finding the bookstore",
+  "titleHanzi": "找书店",
+  "category": "shopping-mall",
+  "level": "elementary",
+  "description": "Finding the bookstore. Read the conversation and listen to each speaker.",
+  "speakers": [
+    {
+      "id": "a",
+      "name": "Lin"
+    },
+    {
+      "id": "b",
+      "name": "Chen"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "speaker": "a",
+      "order": 1,
+      "text": "请问，书店在哪儿？",
+      "translation": "Excuse me, where is the bookstore?",
+      "units": [
+        {
+          "hanzi": "请问",
+          "pinyin": "qǐng wèn",
+          "gloss": "excuse me, may I ask",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "请",
+              "pinyin": "qǐng"
+            },
+            {
+              "hanzi": "问",
+              "pinyin": "wèn"
+            }
+          ]
+        },
+        {
+          "hanzi": "，",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "书店",
+          "pinyin": "shū diàn",
+          "gloss": "bookstore",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "书",
+              "pinyin": "shū"
+            },
+            {
+              "hanzi": "店",
+              "pinyin": "diàn"
+            }
+          ]
+        },
+        {
+          "hanzi": "在",
+          "pinyin": "zài",
+          "gloss": "is located",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ]
+        },
+        {
+          "hanzi": "哪儿",
+          "pinyin": "nǎr",
+          "gloss": "where",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "哪儿",
+              "pinyin": "nǎr"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "speaker": "b",
+      "order": 2,
+      "text": "书店在二楼。",
+      "translation": "The bookstore is on the second floor.",
+      "units": [
+        {
+          "hanzi": "书店",
+          "pinyin": "shū diàn",
+          "gloss": "bookstore",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "书",
+              "pinyin": "shū"
+            },
+            {
+              "hanzi": "店",
+              "pinyin": "diàn"
+            }
+          ]
+        },
+        {
+          "hanzi": "在",
+          "pinyin": "zài",
+          "gloss": "is located",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ]
+        },
+        {
+          "hanzi": "二",
+          "pinyin": "èr",
+          "gloss": "second",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "二",
+              "pinyin": "èr"
+            }
+          ]
+        },
+        {
+          "hanzi": "楼",
+          "pinyin": "lóu",
+          "gloss": "floor",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "楼",
+              "pinyin": "lóu"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "speaker": "a",
+      "order": 3,
+      "text": "谢谢。这里有餐厅吗？",
+      "translation": "Thank you. Is there a restaurant here?",
+      "units": [
+        {
+          "hanzi": "谢谢",
+          "pinyin": "xiè xie",
+          "gloss": "thank you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "谢",
+              "pinyin": "xiè"
+            },
+            {
+              "hanzi": "谢",
+              "pinyin": "xie"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "这里",
+          "pinyin": "zhè lǐ",
+          "gloss": "here",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            },
+            {
+              "hanzi": "里",
+              "pinyin": "lǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "有",
+          "pinyin": "yǒu",
+          "gloss": "there is",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "有",
+              "pinyin": "yǒu"
+            }
+          ]
+        },
+        {
+          "hanzi": "餐厅",
+          "pinyin": "cān tīng",
+          "gloss": "restaurant",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "餐",
+              "pinyin": "cān"
+            },
+            {
+              "hanzi": "厅",
+              "pinyin": "tīng"
+            }
+          ]
+        },
+        {
+          "hanzi": "吗",
+          "pinyin": "ma",
+          "gloss": "question particle",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "吗",
+              "pinyin": "ma"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "speaker": "b",
+      "order": 4,
+      "text": "有，在三楼。",
+      "translation": "Yes, on the third floor.",
+      "units": [
+        {
+          "hanzi": "有",
+          "pinyin": "yǒu",
+          "gloss": "yes, there is",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "有",
+              "pinyin": "yǒu"
+            }
+          ]
+        },
+        {
+          "hanzi": "，",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "在",
+          "pinyin": "zài",
+          "gloss": "is located",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "在",
+              "pinyin": "zài"
+            }
+          ]
+        },
+        {
+          "hanzi": "三",
+          "pinyin": "sān",
+          "gloss": "third",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "三",
+              "pinyin": "sān"
+            }
+          ]
+        },
+        {
+          "hanzi": "楼",
+          "pinyin": "lóu",
+          "gloss": "floor",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "楼",
+              "pinyin": "lóu"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Where is the bookstore?",
+      "options": [
+        "Second floor",
+        "First floor",
+        "Third floor"
+      ],
+      "answer": 0,
+      "explanation": "Chen says 在二楼.",
+      "evidence": [
+        "t2"
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "Where is the restaurant?",
+      "options": [
+        "Third floor",
+        "Second floor",
+        "Outside"
+      ],
+      "answer": 0,
+      "explanation": "Chen says 在三楼.",
+      "evidence": [
+        "t4"
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "What does Lin look for first?",
+      "options": [
+        "A bookstore",
+        "A restaurant",
+        "A pharmacy"
+      ],
+      "answer": 0,
+      "explanation": "The first question mentions 书店.",
+      "evidence": [
+        "t1"
+      ]
+    }
+  ],
+  "version": 1
+}

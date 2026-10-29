@@ -1,1 +1,10 @@
-const vm=require('vm'),fs=require('fs'),path=require('path'),assert=require('assert/strict');const {boot}=require('./regression.cjs');const context=boot().context,cache=new Map();function load(file){file=path.resolve(file);if(!cache.has(file))cache.set(file,new vm.SourceTextModule(fs.readFileSync(file,'utf8'),{context,identifier:file}));return cache.get(file)};(async()=>{const entry=load('dist/js/app.js');await entry.link((specifier,parent)=>load(path.resolve(path.dirname(parent.identifier),specifier)));await entry.evaluate();assert.equal(load('dist/js/state/app-state.js').namespace.runtime.state.words.length,174);console.log('PASS native ES module graph linked and initialized')})().catch(e=>{console.error(e);process.exitCode=1});
+const vm=require('vm'),fs=require('fs'),path=require('path'),assert=require('assert/strict');const {boot}=require('./regression.cjs');const context=boot().context,cache=new Map();function load(file){file=path.resolve(file);if(!cache.has(file))cache.set(file,new vm.SourceTextModule(fs.readFileSync(file,'utf8'),{context,identifier:file}));return cache.get(file)};(async()=>{const entry=load('dist/js/app.js');await entry.link((specifier,parent)=>load(path.resolve(path.dirname(parent.identifier),specifier)));await entry.evaluate();assert.equal(load('dist/js/state/app-state.js').namespace.runtime.state.words.length,174);const center=load('dist/js/learning/center.js').namespace;
+center.renderLearningCenter();
+assert.equal(context.document.getElementById('learningCards').children.length,6);
+const lessons=load('dist/js/data/generated-content.js').namespace.contentLessons;
+center.launchLearningActivity('quiz',lessons[0]);
+const runtime=load('dist/js/state/app-state.js').namespace.runtime;
+assert.equal(context.document.getElementById('quizSection').value,lessons[0].section);
+center.launchLearningActivity('learn',null);assert.equal(runtime.learningWords.length,174);
+assert.equal(runtime.learningAll,true);
+console.log('PASS native ES module graph linked and initialized')})().catch(e=>{console.error(e);process.exitCode=1});

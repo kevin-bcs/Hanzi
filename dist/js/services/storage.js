@@ -36,14 +36,15 @@ export function inSection(w, f) {
 export function mergeStarter() {
   for (const w of starter) {
     if (runtime.state.deleted.includes(w.hanzi)) continue;
-    if (runtime.state.words.some((x) => x.id === w.id)) continue;
+    const same=runtime.state.words.find(x=>x.id===w.id);
+    if(same){same.sections=[...new Set([...memberships(same),...w.sections])];same.image=w.image;same.imageAlt=w.imageAlt;continue;}
     let found = runtime.state.words.find((x) => x.hanzi === w.hanzi);
     if (found) {
       found.sections = [...new Set([...memberships(found), w.section])];
       for (const k of ["category", "meaning", "pinyin"])
         if (!found[k]) found[k] = w[k];
       found.errors = found.errors || 0;
-    } else runtime.state.words.push({ ...w, sections: [w.section] });
+    } else runtime.state.words.push({ ...w, sections: [...w.sections] });
   }
   runtime.state.version = 3;
   save();

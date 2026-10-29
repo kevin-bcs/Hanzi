@@ -1,0 +1,312 @@
+{
+  "id": "home",
+  "title": "Tea at home",
+  "titleHanzi": "在家喝茶",
+  "category": "at-home",
+  "level": "beginner",
+  "description": "Tea at home. Read the conversation and listen to each speaker.",
+  "speakers": [
+    {
+      "id": "a",
+      "name": "Lin"
+    },
+    {
+      "id": "b",
+      "name": "Chen"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "speaker": "a",
+      "order": 1,
+      "text": "你喝茶吗？",
+      "translation": "Would you like tea?",
+      "units": [
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "gloss": "you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "喝",
+          "pinyin": "hē",
+          "gloss": "drink",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "喝",
+              "pinyin": "hē"
+            }
+          ]
+        },
+        {
+          "hanzi": "茶",
+          "pinyin": "chá",
+          "gloss": "tea",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "茶",
+              "pinyin": "chá"
+            }
+          ]
+        },
+        {
+          "hanzi": "吗",
+          "pinyin": "ma",
+          "gloss": "question particle",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "吗",
+              "pinyin": "ma"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "speaker": "b",
+      "order": 2,
+      "text": "我喝水，谢谢。",
+      "translation": "I would like water, thank you.",
+      "units": [
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "gloss": "I",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "喝",
+          "pinyin": "hē",
+          "gloss": "drink",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "喝",
+              "pinyin": "hē"
+            }
+          ]
+        },
+        {
+          "hanzi": "水",
+          "pinyin": "shuǐ",
+          "gloss": "water",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "水",
+              "pinyin": "shuǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "，",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "谢谢",
+          "pinyin": "xiè xie",
+          "gloss": "thank you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "谢",
+              "pinyin": "xiè"
+            },
+            {
+              "hanzi": "谢",
+              "pinyin": "xie"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "speaker": "a",
+      "order": 3,
+      "text": "这是你的水。",
+      "translation": "Here is your water.",
+      "units": [
+        {
+          "hanzi": "这",
+          "pinyin": "zhè",
+          "gloss": "this",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            }
+          ]
+        },
+        {
+          "hanzi": "是",
+          "pinyin": "shì",
+          "gloss": "is",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            }
+          ]
+        },
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "gloss": "you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "的",
+          "pinyin": "de",
+          "gloss": "possessive particle",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "的",
+              "pinyin": "de"
+            }
+          ]
+        },
+        {
+          "hanzi": "水",
+          "pinyin": "shuǐ",
+          "gloss": "water",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "水",
+              "pinyin": "shuǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "speaker": "b",
+      "order": 4,
+      "text": "谢谢。",
+      "translation": "Thank you.",
+      "units": [
+        {
+          "hanzi": "谢谢",
+          "pinyin": "xiè xie",
+          "gloss": "thank you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "谢",
+              "pinyin": "xiè"
+            },
+            {
+              "hanzi": "谢",
+              "pinyin": "xie"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What does Lin offer?",
+      "options": [
+        "Tea",
+        "Coffee",
+        "Milk"
+      ],
+      "answer": 0,
+      "explanation": "Lin asks 你喝茶吗？",
+      "evidence": [
+        "t1"
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "What does Chen choose?",
+      "options": [
+        "Water",
+        "Tea",
+        "Beer"
+      ],
+      "answer": 0,
+      "explanation": "Chen says 我喝水.",
+      "evidence": [
+        "t2"
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "Does Chen say thank you?",
+      "options": [
+        "Yes",
+        "No",
+        "Only apologizes"
+      ],
+      "answer": 0,
+      "explanation": "Chen says 谢谢.",
+      "evidence": [
+        "t4"
+      ]
+    }
+  ],
+  "version": 1
+}

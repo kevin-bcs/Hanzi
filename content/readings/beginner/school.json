@@ -1,0 +1,364 @@
+{
+  "id": "school",
+  "title": "A book for class",
+  "titleHanzi": "上课的书",
+  "category": "school",
+  "level": "beginner",
+  "description": "A book for class. Read the conversation and listen to each speaker.",
+  "speakers": [
+    {
+      "id": "a",
+      "name": "Lin"
+    },
+    {
+      "id": "b",
+      "name": "Chen"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t1",
+      "speaker": "a",
+      "order": 1,
+      "text": "这是你的书吗？",
+      "translation": "Is this your book?",
+      "units": [
+        {
+          "hanzi": "这",
+          "pinyin": "zhè",
+          "gloss": "this",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "这",
+              "pinyin": "zhè"
+            }
+          ]
+        },
+        {
+          "hanzi": "是",
+          "pinyin": "shì",
+          "gloss": "is",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            }
+          ]
+        },
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "gloss": "you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "的",
+          "pinyin": "de",
+          "gloss": "possessive particle",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "的",
+              "pinyin": "de"
+            }
+          ]
+        },
+        {
+          "hanzi": "书",
+          "pinyin": "shū",
+          "gloss": "book",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "书",
+              "pinyin": "shū"
+            }
+          ]
+        },
+        {
+          "hanzi": "吗",
+          "pinyin": "ma",
+          "gloss": "question particle",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "吗",
+              "pinyin": "ma"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t2",
+      "speaker": "b",
+      "order": 2,
+      "text": "是我的，谢谢！",
+      "translation": "Yes, thank you!",
+      "units": [
+        {
+          "hanzi": "是",
+          "pinyin": "shì",
+          "gloss": "yes",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "是",
+              "pinyin": "shì"
+            }
+          ]
+        },
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "gloss": "I",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "的",
+          "pinyin": "de",
+          "gloss": "possessive particle",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "的",
+              "pinyin": "de"
+            }
+          ]
+        },
+        {
+          "hanzi": "，",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        },
+        {
+          "hanzi": "谢谢",
+          "pinyin": "xiè xie",
+          "gloss": "thank you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "谢",
+              "pinyin": "xiè"
+            },
+            {
+              "hanzi": "谢",
+              "pinyin": "xie"
+            }
+          ]
+        },
+        {
+          "hanzi": "！",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "speaker": "a",
+      "order": 3,
+      "text": "你今天学习什么？",
+      "translation": "What are you studying today?",
+      "units": [
+        {
+          "hanzi": "你",
+          "pinyin": "nǐ",
+          "gloss": "you",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "你",
+              "pinyin": "nǐ"
+            }
+          ]
+        },
+        {
+          "hanzi": "今天",
+          "pinyin": "jīn tiān",
+          "gloss": "today",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "今",
+              "pinyin": "jīn"
+            },
+            {
+              "hanzi": "天",
+              "pinyin": "tiān"
+            }
+          ]
+        },
+        {
+          "hanzi": "学习",
+          "pinyin": "xué xí",
+          "gloss": "study",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "习",
+              "pinyin": "xí"
+            }
+          ]
+        },
+        {
+          "hanzi": "什么",
+          "pinyin": "shén me",
+          "gloss": "what",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "什",
+              "pinyin": "shén"
+            },
+            {
+              "hanzi": "么",
+              "pinyin": "me"
+            }
+          ]
+        },
+        {
+          "hanzi": "？",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    },
+    {
+      "id": "t4",
+      "speaker": "b",
+      "order": 4,
+      "text": "我学习汉语。",
+      "translation": "I am studying Chinese.",
+      "units": [
+        {
+          "hanzi": "我",
+          "pinyin": "wǒ",
+          "gloss": "I",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "我",
+              "pinyin": "wǒ"
+            }
+          ]
+        },
+        {
+          "hanzi": "学习",
+          "pinyin": "xué xí",
+          "gloss": "study",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "学",
+              "pinyin": "xué"
+            },
+            {
+              "hanzi": "习",
+              "pinyin": "xí"
+            }
+          ]
+        },
+        {
+          "hanzi": "汉语",
+          "pinyin": "hàn yǔ",
+          "gloss": "Chinese",
+          "kind": "word",
+          "alignment": [
+            {
+              "hanzi": "汉",
+              "pinyin": "hàn"
+            },
+            {
+              "hanzi": "语",
+              "pinyin": "yǔ"
+            }
+          ]
+        },
+        {
+          "hanzi": "。",
+          "pinyin": "",
+          "gloss": "",
+          "kind": "punctuation",
+          "alignment": []
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "What object do they discuss?",
+      "options": [
+        "A book",
+        "A phone",
+        "A cup"
+      ],
+      "answer": 0,
+      "explanation": "The first speaker asks about a book.",
+      "evidence": [
+        "t1"
+      ]
+    },
+    {
+      "id": "q2",
+      "prompt": "What is Chen studying?",
+      "options": [
+        "Chinese",
+        "Music",
+        "Math"
+      ],
+      "answer": 0,
+      "explanation": "Chen says 我学习汉语.",
+      "evidence": [
+        "t4"
+      ]
+    },
+    {
+      "id": "q3",
+      "prompt": "How does Chen respond?",
+      "options": [
+        "With thanks",
+        "With an apology",
+        "With a refusal"
+      ],
+      "answer": 0,
+      "explanation": "Chen says 谢谢.",
+      "evidence": [
+        "t2"
+      ]
+    }
+  ],
+  "version": 1
+}

@@ -4,18 +4,17 @@
     name="viewport"
     content="width=device-width,initial-scale=1"
   /><title>Hanzi Daily — A little Chinese, every day</title
-  ><link rel="stylesheet" href="css/main.css" />
+  ><link rel="stylesheet" href="css/main.css" /><link rel="stylesheet" href="css/readings.css" />
   <header>
     <div class="brand"><span class="seal">字</span>Hanzi Daily</div>
-    <nav aria-label="Main navigation">
+    <nav aria-label="Main navigation"><button data-tab="readings">Readings</button>
       <button data-tab="home">Home</button
-      ><button data-tab="learn">Learn</button
+      ><button data-tab="learning">Learning Center</button><button data-tab="learn">Learn</button
       ><button data-tab="study">Review</button
       ><button data-tab="games">Play</button
       ><button data-tab="progress">Progress</button
       ><button data-tab="words">Vocabulary</button
-      ><button data-tab="admin">Content tools</button
-      ><button data-tab="add">＋ Add words</button>
+      >
     </nav>
     <span class="small">Your Chinese, one word at a time.</span>
   </header>
@@ -35,7 +34,7 @@
       </div>
       <span class="date" id="today"></span>
     </div>
-    <section id="home" class="panel">
+    <section id="readings" class="hidden panel" aria-label="Interactive Chinese Reader"></section><section id="home" class="panel">
       <span class="eyebrow">LEARN FIRST, THEN PRACTICE</span>
       <h2>A lesson at a time.</h2>
       <p>
@@ -43,7 +42,7 @@
         in four independent games. No locked levels.
       </p>
       <div class="toolbar">
-        <button class="primary" data-tab="learn">Start learning</button
+        <button class="primary" data-tab="learning">Start learning</button
         ><button data-tab="games">Practice games</button
         ><button data-tab="progress">My progress</button>
       </div>
@@ -51,6 +50,13 @@
         Your content and progress stay in this browser. No account or shared
         classroom storage is connected.
       </p>
+    </section>
+    <section id="learning" class="hidden" aria-labelledby="learningTitle">
+      <span class="eyebrow">YOUR LESSONS. YOUR PACE.</span>
+      <h2 id="learningTitle">Learning Center — <span lang="zh-CN">学习中心</span></h2>
+      <p>Choose a lesson, then study or practice its vocabulary. All Lessons includes your full collection.</p>
+      <p class="small">Progress counts words viewed, not mastery. More activities will be added in the next phases.</p>
+      <div id="learningCards" class="learning-grid"></div>
     </section>
     <section id="learn" class="hidden panel">
       <span class="eyebrow">LEVEL → LESSON → LEARN → PRACTICE</span>
@@ -82,28 +88,7 @@
       <div id="progressRows"></div>
       <button data-tab="learn">Continue learning</button>
     </section>
-    <section id="admin" class="hidden panel">
-      <h2>Local content tools</h2>
-      <p>
-        Import levels, lessons, vocabulary and phrases. This is a local tool,
-        not a protected administrator account. Content is saved only on this
-        device.
-      </p>
-      <label
-        >Lesson JSON<input
-          type="file"
-          id="contentFile"
-          accept=".json,application/json"
-      /></label>
-      <pre id="contentReport" style="white-space: pre-wrap"></pre>
-      <button id="applyContent" class="primary" disabled>Confirm import</button>
-      <p>
-        <a href="lesson-template.json" download
-          >Download JSON lesson template</a
-        >
-      </p>
-      <button id="recoverData">Recover previous data snapshot</button>
-    </section>
+    
     <section id="study" class="hidden">
       <div class="toolbar">
         <label>Study section<select id="studyFilter"></select></label
@@ -382,7 +367,7 @@
           placeholder="Search characters, pinyin or meaning"
           aria-label="Search vocabulary"
         /><button id="export">Export backup</button
-        ><button id="importBtn">Import backup</button
+        ><button id="recoverData">Recover previous data snapshot</button><button id="importBtn">Import backup</button
         ><input type="file" id="import" accept="application/json" hidden />
       </div>
       <div style="overflow: auto">
@@ -402,47 +387,7 @@
       </div>
       <p class="small">Backups include your vocabulary and review schedule.</p>
     </section>
-    <section id="add" class="hidden panel">
-      <span class="eyebrow">BUILD YOUR COLLECTION</span>
-      <h2>A word from your world.</h2>
-      <p>Add vocabulary from class, campus or a conversation.</p>
-      <form id="addForm">
-        <label
-          >Chinese characters<input
-            name="hanzi"
-            required
-            maxlength="40"
-            placeholder="你好"
-            lang="zh-CN" /></label
-        ><label
-          >Pinyin with tone marks<input
-            name="pinyin"
-            required
-            maxlength="100"
-            placeholder="nǐ hǎo"
-            title="Separate every syllable with a space for tone practice" /></label
-        ><label
-          >Meaning<input
-            name="meaning"
-            required
-            maxlength="150"
-            placeholder="hello" /></label
-        ><label
-          >Lesson or section<input
-            name="section"
-            required
-            maxlength="60"
-            placeholder="Class vocabulary" /></label
-        ><label
-          >Example sentence (optional)<input
-            name="example"
-            maxlength="200"
-            placeholder="你好！"
-            lang="zh-CN" /></label
-        ><button class="primary">Add to my vocabulary</button>
-      </form>
-      <div id="saved" role="status"></div>
-    </section>
+    
     <footer>
       <span>HANZI DAILY / 学习中文</span
       ><span

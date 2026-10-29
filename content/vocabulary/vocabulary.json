@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "v0",
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "english": "you",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v1",
+    "hanzi": "他",
+    "pinyin": "tā",
+    "english": "he; him",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v2",
+    "hanzi": "她",
+    "pinyin": "tā",
+    "english": "she; her",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v3",
+    "hanzi": "不",
+    "pinyin": "bù",
+    "english": "no; not",
+    "category": "adverb",
+    "example": ""
+  },
+  {
+    "id": "v4",
+    "hanzi": "来",
+    "pinyin": "lái",
+    "english": "come",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v5",
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "english": "love",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v6",
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "english": "buy",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v7",
+    "hanzi": "卖",
+    "pinyin": "mài",
+    "english": "sell",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v8",
+    "hanzi": "读",
+    "pinyin": "dú",
+    "english": "read",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v9",
+    "hanzi": "爸爸",
+    "pinyin": "bà ba",
+    "english": "dad",
+    "category": "family",
+    "example": ""
+  },
+  {
+    "id": "v10",
+    "hanzi": "妈妈",
+    "pinyin": "mā ma",
+    "english": "mom",
+    "category": "family",
+    "example": ""
+  },
+  {
+    "id": "v11",
+    "hanzi": "笔",
+    "pinyin": "bǐ",
+    "english": "pen",
+    "category": "noun",
+    "example": ""
+  },
+  {
+    "id": "v12",
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "english": "cat",
+    "category": "noun",
+    "example": "",
+    "image": "assets/images/vocabulary/cat.svg",
+    "imageAlt": "Cat"
+  },
+  {
+    "id": "v13",
+    "hanzi": "包",
+    "pinyin": "bāo",
+    "english": "bag",
+    "category": "noun",
+    "example": ""
+  },
+  {
+    "id": "v14",
+    "hanzi": "报",
+    "pinyin": "bào",
+    "english": "newspaper",
+    "category": "noun",
+    "example": ""
+  },
+  {
+    "id": "v15",
+    "hanzi": "衣服",
+    "pinyin": "yī fu",
+    "english": "clothes",
+    "category": "noun",
+    "example": ""
+  },
+  {
+    "id": "v16",
+    "hanzi": "地图",
+    "pinyin": "dì tú",
+    "english": "map",
+    "category": "noun",
+    "example": ""
+  },
+  {
+    "id": "v17",
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "english": "question particle (at the end of a yes/no question)",
+    "category": "particle",
+    "example": ""
+  },
+  {
+    "id": "v18",
+    "hanzi": "一",
+    "pinyin": "yī",
+    "english": "one",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v19",
+    "hanzi": "二",
+    "pinyin": "èr",
+    "english": "two",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v20",
+    "hanzi": "三",
+    "pinyin": "sān",
+    "english": "three",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v21",
+    "hanzi": "四",
+    "pinyin": "sì",
+    "english": "four",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v22",
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "english": "five",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v23",
+    "hanzi": "六",
+    "pinyin": "liù",
+    "english": "six",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v24",
+    "hanzi": "七",
+    "pinyin": "qī",
+    "english": "seven",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v25",
+    "hanzi": "八",
+    "pinyin": "bā",
+    "english": "eight",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v26",
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "english": "nine",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v27",
+    "hanzi": "十",
+    "pinyin": "shí",
+    "english": "ten",
+    "category": "number",
+    "example": ""
+  },
+  {
+    "id": "v28",
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "english": "I; me",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v29",
+    "hanzi": "我们",
+    "pinyin": "wǒ men",
+    "english": "we; us",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v30",
+    "hanzi": "你们",
+    "pinyin": "nǐ men",
+    "english": "you (plural)",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v31",
+    "hanzi": "他们",
+    "pinyin": "tā men",
+    "english": "they; them (masculine or mixed)",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v32",
+    "hanzi": "她们",
+    "pinyin": "tā men",
+    "english": "they; them (feminine)",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v33",
+    "hanzi": "的",
+    "pinyin": "de",
+    "english": "structural particle; links a modifier to a noun",
+    "category": "particle",
+    "example": ""
+  },
+  {
+    "id": "v34",
+    "hanzi": "哥哥",
+    "pinyin": "gē ge",
+    "english": "older brother",
+    "category": "family",
+    "example": ""
+  },
+  {
+    "id": "v35",
+    "hanzi": "弟弟",
+    "pinyin": "dì di",
+    "english": "younger brother",
+    "category": "family",
+    "example": ""
+  },
+  {
+    "id": "v36",
+    "hanzi": "妹妹",
+    "pinyin": "mèi mei",
+    "english": "younger sister",
+    "category": "family",
+    "example": ""
+  },
+  {
+    "id": "v37",
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "english": "very",
+    "category": "adverb",
+    "example": ""
+  },
+  {
+    "id": "v38",
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "english": "good; okay",
+    "category": "adjective",
+    "example": ""
+  },
+  {
+    "id": "v39",
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "english": "busy",
+    "category": "adjective",
+    "example": ""
+  },
+  {
+    "id": "v40",
+    "hanzi": "累",
+    "pinyin": "lèi",
+    "english": "tired",
+    "category": "adjective",
+    "example": ""
+  },
+  {
+    "id": "v41",
+    "hanzi": "困",
+    "pinyin": "kùn",
+    "english": "sleepy",
+    "category": "adjective",
+    "example": ""
+  },
+  {
+    "id": "v42",
+    "hanzi": "高",
+    "pinyin": "gāo",
+    "english": "tall; high",
+    "category": "adjective",
+    "example": ""
+  },
+  {
+    "id": "v43",
+    "hanzi": "贵",
+    "pinyin": "guì",
+    "english": "expensive",
+    "category": "adjective",
+    "example": ""
+  },
+  {
+    "id": "v44",
+    "hanzi": "好看",
+    "pinyin": "hǎo kàn",
+    "english": "good-looking; interesting",
+    "category": "adjective",
+    "example": ""
+  },
+  {
+    "id": "v45",
+    "hanzi": "爷爷",
+    "pinyin": "yé ye",
+    "english": "grandpa",
+    "category": "family",
+    "example": ""
+  },
+  {
+    "id": "v46",
+    "hanzi": "奶奶",
+    "pinyin": "nǎi nai",
+    "english": "grandma",
+    "category": "family",
+    "example": ""
+  },
+  {
+    "id": "v47",
+    "hanzi": "姐姐",
+    "pinyin": "jiě jie",
+    "english": "older sister",
+    "category": "family",
+    "example": ""
+  },
+  {
+    "id": "v48",
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "english": "drink",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v49",
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "english": "look at; watch",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v50",
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "english": "listen",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v51",
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "english": "write",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v52",
+    "hanzi": "学习",
+    "pinyin": "xué xí",
+    "english": "study; learn",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v53",
+    "hanzi": "喜欢",
+    "pinyin": "xǐ huan",
+    "english": "like",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v54",
+    "hanzi": "咖啡",
+    "pinyin": "kā fēi",
+    "english": "coffee",
+    "category": "food & drink",
+    "example": ""
+  },
+  {
+    "id": "v55",
+    "hanzi": "牛奶",
+    "pinyin": "niú nǎi",
+    "english": "milk",
+    "category": "food & drink",
+    "example": ""
+  },
+  {
+    "id": "v56",
+    "hanzi": "啤酒",
+    "pinyin": "pí jiǔ",
+    "english": "beer",
+    "category": "food & drink",
+    "example": ""
+  },
+  {
+    "id": "v57",
+    "hanzi": "电影",
+    "pinyin": "diàn yǐng",
+    "english": "film; movie",
+    "category": "noun",
+    "example": ""
+  },
+  {
+    "id": "v58",
+    "hanzi": "电脑",
+    "pinyin": "diàn nǎo",
+    "english": "computer",
+    "category": "noun",
+    "example": "",
+    "image": "assets/images/vocabulary/computer.svg",
+    "imageAlt": "Computer"
+  },
+  {
+    "id": "v59",
+    "hanzi": "音乐",
+    "pinyin": "yīn yuè",
+    "english": "music",
+    "category": "noun",
+    "example": ""
+  },
+  {
+    "id": "v60",
+    "hanzi": "汉语",
+    "pinyin": "Hàn yǔ",
+    "english": "Chinese language",
+    "category": "language",
+    "example": ""
+  },
+  {
+    "id": "v61",
+    "hanzi": "英语",
+    "pinyin": "Yīng yǔ",
+    "english": "English language",
+    "category": "language",
+    "example": ""
+  },
+  {
+    "id": "v62",
+    "hanzi": "难",
+    "pinyin": "nán",
+    "english": "difficult",
+    "category": "adjective",
+    "example": ""
+  },
+  {
+    "id": "v63",
+    "hanzi": "便宜",
+    "pinyin": "pián yi",
+    "english": "cheap",
+    "category": "adjective",
+    "example": ""
+  },
+  {
+    "id": "v64",
+    "hanzi": "谢谢",
+    "pinyin": "xiè xie",
+    "english": "thank you",
+    "category": "expression",
+    "example": ""
+  },
+  {
+    "id": "v65",
+    "hanzi": "不客气",
+    "pinyin": "bú kè qi",
+    "english": "you are welcome",
+    "category": "expression",
+    "example": ""
+  },
+  {
+    "id": "v66",
+    "hanzi": "对不起",
+    "pinyin": "duì bu qǐ",
+    "english": "sorry; excuse me",
+    "category": "expression",
+    "example": ""
+  },
+  {
+    "id": "v67",
+    "hanzi": "没关系",
+    "pinyin": "méi guān xi",
+    "english": "it does not matter",
+    "category": "expression",
+    "example": ""
+  },
+  {
+    "id": "v68",
+    "hanzi": "您",
+    "pinyin": "nín",
+    "english": "you (respectful)",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v69",
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "english": "this",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v70",
+    "hanzi": "那",
+    "pinyin": "nà",
+    "english": "that",
+    "category": "pronoun",
+    "example": ""
+  },
+  {
+    "id": "v71",
+    "hanzi": "这儿 / 这里",
+    "pinyin": "zhèr / zhè lǐ",
+    "english": "here",
+    "category": "place",
+    "example": ""
+  },
+  {
+    "id": "v72",
+    "hanzi": "那儿 / 那里",
+    "pinyin": "nàr / nà lǐ",
+    "english": "there",
+    "category": "place",
+    "example": ""
+  },
+  {
+    "id": "v73",
+    "hanzi": "什么",
+    "pinyin": "shén me",
+    "english": "what",
+    "category": "question word",
+    "example": ""
+  },
+  {
+    "id": "v74",
+    "hanzi": "谁",
+    "pinyin": "shéi / shuí",
+    "english": "who",
+    "category": "question word",
+    "example": ""
+  },
+  {
+    "id": "v75",
+    "hanzi": "哪儿 / 哪里",
+    "pinyin": "nǎr / nǎ lǐ",
+    "english": "where",
+    "category": "question word",
+    "example": ""
+  },
+  {
+    "id": "v76",
+    "hanzi": "是",
+    "pinyin": "shì",
+    "english": "be; yes",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v77",
+    "hanzi": "去",
+    "pinyin": "qù",
+    "english": "go",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v78",
+    "hanzi": "回",
+    "pinyin": "huí",
+    "english": "return; go back",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v79",
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "english": "eat",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v80",
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "english": "say; speak",
+    "category": "verb",
+    "example": ""
+  },
+  {
+    "id": "v81",
+    "hanzi": "书",
+    "pinyin": "shū",
+    "english": "book",
+    "category": "noun",
+    "example": "",
+    "image": "assets/images/vocabulary/book.svg",
+    "imageAlt": "Open book"
+  },
+  {
+    "id": "v82",
+    "hanzi": "手机",
+    "pinyin": "shǒu jī",
+    "english": "mobile phone",
+    "category": "noun",
+    "example": ""
+  },
+  {
+    "id": "v83",
+    "hanzi": "电视",
+    "pinyin": "diàn shì",
+    "english": "television",
+    "category": "noun",
+    "example": ""
+  },
+  {
+    "id": "v84",
+    "hanzi": "老师",
+    "pinyin": "lǎo shī",
+    "english": "teacher",
+    "category": "people",
+    "example": ""
+  },
+  {
+    "id": "v85",
+    "hanzi": "学生",
+    "pinyin": "xué sheng",
+    "english": "student",
+    "category": "people",
+    "example": ""
+  },
+  {
+    "id": "v86",
+    "hanzi": "朋友",
+    "pinyin": "péng you",
+    "english": "friend",
+    "category": "people",
+    "example": ""
+  },
+  {
+    "id": "v87",
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "english": "family; home",
+    "category": "place",
+    "example": ""
+  },
+  {
+    "id": "v88",
+    "hanzi": "商店",
+    "pinyin": "shāng diàn",
+    "english": "shop; store",
+    "category": "place",
+    "example": ""
+  },
+  {
+    "id": "v89",
+    "hanzi": "学校",
+    "pinyin": "xué xiào",
+    "english": "school",
+    "category": "place",
+    "example": ""
+  },
+  {
+    "id": "v90",
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "english": "water",
+    "category": "food & drink",
+    "example": "",
+    "image": "assets/images/vocabulary/water.svg",
+    "imageAlt": "Drop of water"
+  },
+  {
+    "id": "v91",
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "english": "tea",
+    "category": "food & drink",
+    "example": "",
+    "image": "assets/images/vocabulary/tea.svg",
+    "imageAlt": "Cup of tea"
+  },
+  {
+    "id": "v92",
+    "hanzi": "水果",
+    "pinyin": "shuǐ guǒ",
+    "english": "fruit",
+    "category": "food & drink",
+    "example": ""
+  },
+  {
+    "id": "v93",
+    "hanzi": "饭",
+    "pinyin": "fàn",
+    "english": "meal; rice",
+    "category": "food & drink",
+    "example": ""
+  },
+  {
+    "id": "v94",
+    "hanzi": "面包",
+    "pinyin": "miàn bāo",
+    "english": "bread",
+    "category": "food & drink",
+    "example": "",
+    "image": "assets/images/vocabulary/bread.svg",
+    "imageAlt": "Slice of bread"
+  },
+  {
+    "id": "v95",
+    "hanzi": "中国",
+    "pinyin": "Zhōng guó",
+    "english": "China",
+    "category": "proper noun",
+    "example": ""
+  },
+  {
+    "id": "v96",
+    "hanzi": "美国",
+    "pinyin": "Měi guó",
+    "english": "United States",
+    "category": "proper noun",
+    "example": ""
+  },
+  {
+    "id": "v97",
+    "hanzi": "日本",
+    "pinyin": "Rì běn",
+    "english": "Japan",
+    "category": "proper noun",
+    "example": ""
+  },
+  {
+    "id": "v98",
+    "hanzi": "韩国",
+    "pinyin": "Hán guó",
+    "english": "South Korea",
+    "category": "proper noun",
+    "example": ""
+  },
+  {
+    "id": "v99",
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "english": "hello",
+    "category": "expression",
+    "example": ""
+  },
+  {
+    "id": "v100",
+    "hanzi": "再见",
+    "pinyin": "zài jiàn",
+    "english": "goodbye",
+    "category": "expression",
+    "example": ""
+  },
+  {
+    "id": "v101",
+    "hanzi": "今天",
+    "pinyin": "jīn tiān",
+    "english": "today",
+    "category": "time",
+    "example": ""
+  },
+  {
+    "id": "v102",
+    "hanzi": "明天",
+    "pinyin": "míng tiān",
+    "english": "tomorrow",
+    "category": "time",
+    "example": ""
+  },
+  {
+    "id": "v103",
+    "hanzi": "现在",
+    "pinyin": "xiàn zài",
+    "english": "now",
+    "category": "time",
+    "example": ""
+  },
+  {
+    "id": "v104",
+    "hanzi": "上海",
+    "pinyin": "Shàng hǎi",
+    "english": "Shanghai",
+    "category": "place",
+    "example": ""
+  },
+  {
+    "id": "v105",
+    "hanzi": "多少钱",
+    "pinyin": "duō shao qián",
+    "english": "how much does it cost?",
+    "category": "question",
+    "example": ""
+  },
+  {
+    "id": "v106",
+    "hanzi": "宿舍",
+    "pinyin": "sù shè",
+    "english": "dormitory",
+    "category": "place",
+    "example": ""
+  },
+  {
+    "id": "v107",
+    "hanzi": "图书馆",
+    "pinyin": "tú shū guǎn",
+    "english": "library",
+    "category": "place",
+    "example": ""
+  },
+  {
+    "id": "v108",
+    "hanzi": "不知道",
+    "pinyin": "bù zhī dào",
+    "english": "do not know",
+    "category": "expression",
+    "example": ""
+  },
+  {
+    "id": "v109",
+    "hanzi": "可以",
+    "pinyin": "kě yǐ",
+    "english": "can; may",
+    "category": "expression",
+    "example": ""
+  },
+  {
+    "id": "v110",
+    "hanzi": "米饭",
+    "pinyin": "mǐ fàn",
+    "english": "cooked rice",
+    "category": "food & drink",
+    "example": ""
+  },
+  {
+    "id": "v111",
+    "hanzi": "零",
+    "pinyin": "líng",
+    "english": "zero",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v122",
+    "hanzi": "百",
+    "pinyin": "bǎi",
+    "english": "hundred",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v123",
+    "hanzi": "千",
+    "pinyin": "qiān",
+    "english": "thousand",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v124",
+    "hanzi": "万",
+    "pinyin": "wàn",
+    "english": "ten thousand",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v125",
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "english": "two (before measure words)",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v126",
+    "hanzi": "个",
+    "pinyin": "gè",
+    "english": "general measure word",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v127",
+    "hanzi": "本",
+    "pinyin": "běn",
+    "english": "measure word for books",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v128",
+    "hanzi": "页",
+    "pinyin": "yè",
+    "english": "page",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v129",
+    "hanzi": "杯 / 杯子",
+    "pinyin": "bēi / bēi zi",
+    "english": "cup; glass",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v130",
+    "hanzi": "瓶 / 瓶子",
+    "pinyin": "píng / píng zi",
+    "english": "bottle",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v131",
+    "hanzi": "多少",
+    "pinyin": "duō shao",
+    "english": "how much; how many",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v132",
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "english": "how many; how much",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v133",
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "english": "money",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v134",
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "english": "yuan (colloquial)",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v135",
+    "hanzi": "元",
+    "pinyin": "yuán",
+    "english": "yuan (RMB unit)",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v136",
+    "hanzi": "毛",
+    "pinyin": "máo",
+    "english": "one tenth of a yuan (colloquial)",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v137",
+    "hanzi": "角",
+    "pinyin": "jiǎo",
+    "english": "one tenth of a yuan",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v139",
+    "hanzi": "昨天",
+    "pinyin": "zuó tiān",
+    "english": "yesterday",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v141",
+    "hanzi": "年",
+    "pinyin": "nián",
+    "english": "year",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v142",
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "english": "month",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v143",
+    "hanzi": "日",
+    "pinyin": "rì",
+    "english": "day; date",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v144",
+    "hanzi": "号",
+    "pinyin": "hào",
+    "english": "date; number",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v145",
+    "hanzi": "星期",
+    "pinyin": "xīng qī",
+    "english": "week",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v146",
+    "hanzi": "星期天 / 星期日",
+    "pinyin": "xīng qī tiān / xīng qī rì",
+    "english": "Sunday",
+    "category": "vocabulary",
+    "example": ""
+  },
+  {
+    "id": "v148",
+    "hanzi": "观看",
+    "pinyin": "guān kàn",
+    "english": "watch",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v149",
+    "hanzi": "开关",
+    "pinyin": "kāi guān",
+    "english": "switch",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v150",
+    "hanzi": "功课",
+    "pinyin": "gōng kè",
+    "english": "homework; schoolwork",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v151",
+    "hanzi": "空格",
+    "pinyin": "kòng gé",
+    "english": "blank space",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v152",
+    "hanzi": "苛刻",
+    "pinyin": "kē kè",
+    "english": "harsh; excessively demanding",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v154",
+    "hanzi": "粉红",
+    "pinyin": "fěn hóng",
+    "english": "pink",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v155",
+    "hanzi": "寒风",
+    "pinyin": "hán fēng",
+    "english": "cold wind",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v156",
+    "hanzi": "恢复",
+    "pinyin": "huī fù",
+    "english": "recover; restore",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v157",
+    "hanzi": "飞虎",
+    "pinyin": "Fēi hǔ",
+    "english": "Flying Tigers",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v158",
+    "hanzi": "黄海",
+    "pinyin": "Huáng hǎi",
+    "english": "the Yellow Sea",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v159",
+    "hanzi": "方法",
+    "pinyin": "fāng fǎ",
+    "english": "method",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v160",
+    "hanzi": "前头",
+    "pinyin": "qián tou",
+    "english": "in front; ahead",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v161",
+    "hanzi": "拳头",
+    "pinyin": "quán tou",
+    "english": "fist",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v162",
+    "hanzi": "有钱",
+    "pinyin": "yǒu qián",
+    "english": "have money; be rich",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v163",
+    "hanzi": "有权",
+    "pinyin": "yǒu quán",
+    "english": "have power or authority",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v164",
+    "hanzi": "演员",
+    "pinyin": "yǎn yuán",
+    "english": "actor; performer",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v165",
+    "hanzi": "全面",
+    "pinyin": "quán miàn",
+    "english": "comprehensive; all-round",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v166",
+    "hanzi": "节约",
+    "pinyin": "jié yuē",
+    "english": "save; economize",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v167",
+    "hanzi": "解决",
+    "pinyin": "jiě jué",
+    "english": "solve; resolve",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v168",
+    "hanzi": "血液",
+    "pinyin": "xuè yè",
+    "english": "blood",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v169",
+    "hanzi": "确切",
+    "pinyin": "què qiè",
+    "english": "exact; precise",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v171",
+    "hanzi": "营业",
+    "pinyin": "yíng yè",
+    "english": "conduct business; be open for business",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v172",
+    "hanzi": "西班牙",
+    "pinyin": "Xī bān yá",
+    "english": "Spain",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v173",
+    "hanzi": "意大利",
+    "pinyin": "Yì dà lì",
+    "english": "Italy",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v174",
+    "hanzi": "等一下",
+    "pinyin": "děng yí xià",
+    "english": "wait a moment",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v175",
+    "hanzi": "听不懂",
+    "pinyin": "tīng bu dǒng",
+    "english": "cannot understand what is heard",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v176",
+    "hanzi": "麦当劳",
+    "pinyin": "Mài dāng láo",
+    "english": "McDonald’s",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v177",
+    "hanzi": "国庆节",
+    "pinyin": "Guó qìng Jié",
+    "english": "National Day",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v178",
+    "hanzi": "巧克力",
+    "pinyin": "qiǎo kè lì",
+    "english": "chocolate",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v179",
+    "hanzi": "冰淇淋",
+    "pinyin": "bīng qí lín",
+    "english": "ice cream",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v180",
+    "hanzi": "博物馆",
+    "pinyin": "bó wù guǎn",
+    "english": "museum",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v181",
+    "hanzi": "电影院",
+    "pinyin": "diàn yǐng yuàn",
+    "english": "cinema; movie theater",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v182",
+    "hanzi": "明信片",
+    "pinyin": "míng xìn piàn",
+    "english": "postcard",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v183",
+    "hanzi": "普通话",
+    "pinyin": "pǔ tōng huà",
+    "english": "Standard Mandarin",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v184",
+    "hanzi": "营业员",
+    "pinyin": "yíng yè yuán",
+    "english": "shop assistant",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v185",
+    "hanzi": "服务员",
+    "pinyin": "fú wù yuán",
+    "english": "waiter; service attendant",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v186",
+    "hanzi": "夏令营",
+    "pinyin": "xià lìng yíng",
+    "english": "summer camp",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v187",
+    "hanzi": "开玩笑",
+    "pinyin": "kāi wán xiào",
+    "english": "joke; make a joke",
+    "category": "pronunciation",
+    "example": ""
+  },
+  {
+    "id": "v188",
+    "hanzi": "玩",
+    "pinyin": "wán",
+    "english": "play; have fun",
+    "category": "pronunciation",
+    "example": ""
+  }
+]

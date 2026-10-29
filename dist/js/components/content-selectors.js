@@ -35,7 +35,7 @@ export function fillGameSections() {
     const select = $(type + "Section"),
       old = select.value;
     select.replaceChildren();
-    if (["tone", "initials"].includes(type)) {
+    if (["memory", "quiz", "tone", "initials"].includes(type)) {
       const o = document.createElement("option");
       o.value = "*";
       o.textContent = "All vocabulary";

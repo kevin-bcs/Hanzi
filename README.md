@@ -39,3 +39,9 @@ Home → Learn → lección → Play. Completar cada juego, verificar ambos rein
 
 ## Despliegue futuro
 Solo tras aprobación: servir dist como sitio estático. No hay compilación. Mantener las rutas relativas y MIME JavaScript. Esta entrega no modifica la página publicada.
+
+## Readings 3.0
+Seis conversaciones y trece categorías; lector modular, modos Guided/Practice/Challenge y comprensión. Fuente editable: content/readings. Regenerar: `npm run build:content` (también se ejecuta antes de npm start). Documentación: docs/HOW_TO_ADD_READINGS.md. No se ha desplegado ni sincronizado esta entrega con GitHub.
+
+## Gestión de lecciones
+Editar content/lessons y content/vocabulary. Ejecutar npm run build:content. Guía: docs/HOW_TO_ADD_LESSONS.md. Ya no se importan lecciones JSON desde la interfaz; los respaldos de progreso continúan en Vocabulary.

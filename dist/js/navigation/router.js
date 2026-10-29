@@ -1,3 +1,6 @@
+import {renderLearningCenter} from '../learning/center.js';
+import {showReadings} from '../readings/controller.js';
+import {stopReadings} from '../readings/audio.js';
 /** Hanzi Daily module: navigation/router.js. Public exports are consumed through explicit imports; mutable session state lives in app-state.js. */
 import { runtime } from "../state/app-state.js";
 import { $ } from "../config/constants.js";
@@ -13,6 +16,8 @@ import { renderLearningLevels } from "../components/lesson-view.js";
 import { renderProgress } from "../components/progress-view.js";
 
 export function go(tab) {
+  stopReadings();
+  if(tab === "readings") showReadings();
   stopTimers();
   runtime.gameEpoch++;
   runtime.activeGame = "";
@@ -23,6 +28,7 @@ export function go(tab) {
   document
     .querySelectorAll("[data-tab]")
     .forEach((b) => b.classList.toggle("active", b.dataset.tab === tab));
+  if (tab === "learning") renderLearningCenter();
   if (tab === "progress") renderProgress();
   if (tab === "learn") renderLearningLevels();
   if (tab === "study") renderCard();

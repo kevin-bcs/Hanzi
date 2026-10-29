@@ -1,0 +1,54 @@
+[
+  {
+    "id": "school",
+    "title": "School"
+  },
+  {
+    "id": "university-life",
+    "title": "University Life"
+  },
+  {
+    "id": "at-home",
+    "title": "At Home"
+  },
+  {
+    "id": "restaurant",
+    "title": "Restaurant"
+  },
+  {
+    "id": "shopping-mall",
+    "title": "Shopping Mall"
+  },
+  {
+    "id": "store",
+    "title": "Store"
+  },
+  {
+    "id": "transportation",
+    "title": "Transportation"
+  },
+  {
+    "id": "meeting-people",
+    "title": "Meeting People"
+  },
+  {
+    "id": "daily-life",
+    "title": "Daily Life"
+  },
+  {
+    "id": "asking-for-directions",
+    "title": "Asking for Directions"
+  },
+  {
+    "id": "travel",
+    "title": "Travel"
+  },
+  {
+    "id": "work",
+    "title": "Work"
+  },
+  {
+    "id": "hospital-pharmacy",
+    "title": "Hospital & Pharmacy"
+  }
+]
