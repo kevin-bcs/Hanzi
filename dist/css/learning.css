@@ -1,28 +1,80 @@
-/* Learning Center shares the existing visual tokens and activity engines. */
-.learning-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:var(--space-4,20px)}
-.learning-card{display:flex;flex-direction:column;gap:12px;margin:0}
-.learning-card h3,.learning-card p{margin:0}.learning-card progress{width:100%;height:12px;accent-color:var(--primary,#236b4e)}
-.learning-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}.learning-actions button{flex:1 1 130px}
-
-/* Phase 2–4 activity shells reuse shared color and spacing tokens. */
-.activity-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px}
-.activity-card{display:flex;flex-direction:column;gap:10px}.activity-card h3,.activity-card p{margin:0}.activity-card button{margin-top:auto}
-#practice>progress{width:100%;accent-color:var(--green);height:12px}.exercise-card{max-width:850px;margin:18px auto}.exercise-card h3{overflow-wrap:anywhere}
-.exercise-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px}.exercise-options>button{min-height:60px}.exercise-options>label{grid-column:1/-1}
-.exercise-card img{display:block;max-width:100%;object-fit:contain;margin:0 auto 18px}.word-bank{display:flex;gap:10px;flex-wrap:wrap;grid-column:1/-1}.word-bank button{font:24px var(--chinese);min-width:48px}.exercise-card .reading-line{margin:15px 0}
-.branch-option{display:block;width:100%;text-align:left;font:24px var(--chinese);margin:12px 0}.story-line{padding:12px 18px;border-left:3px solid var(--green);background:var(--surface)}
-.no-pinyin .reading-pinyin,.no-english .reading-english{display:none}.exercise-options .notice{grid-column:1/-1}
-
-/* Learning Center 4.0: reusable, lightweight and responsive. No external fonts. */
-:root{--success:#205c38;--danger:#8f2929;--focus:#8a4f18;--spacing-xs:8px;--spacing-sm:12px;--spacing-md:20px;--spacing-lg:28px}
-.skip-link{position:absolute;left:16px;top:-80px;padding:12px 18px;background:var(--green);color:white;z-index:20;border-radius:10px}.skip-link:focus{top:12px}
-#mainContent:focus{outline:none}h2:focus{outline:none}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[tabindex="0"]:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
-.learning-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0 16px}.learning-stat{background:#eaf2e8;border:1px solid var(--line);padding:18px;border-radius:14px;display:flex;flex-direction:column;gap:6px;min-width:0}.learning-stat strong{font-size:clamp(23px,3vw,34px);line-height:1.2}.learning-stat span{font-size:13px;color:#405a4a;overflow-wrap:anywhere}
-#homeLearning>progress,#learningSummary>progress,#learningProgress>progress{width:100%;height:12px;accent-color:var(--green)}#learningSummary{margin-bottom:24px}.learning-card h3{line-height:1.4}.learning-card .small{font-size:14px;line-height:1.6}.learning-actions button:last-child{background:var(--green);color:white;flex-basis:100%}
-.activity-card .pinyin{font-size:20px}.activity-card p{font-size:14px}.activity-card:focus-within{border-color:var(--green)}.notice:empty{display:none}.feedback-correct{border-left:4px solid var(--success);background:#eaf5ec}.feedback-wrong{border-left:4px solid var(--danger);background:#fff0eb}.feedback-assisted{border-left:4px solid var(--accent)}
-.exercise-card button{overflow-wrap:anywhere}.exercise-card input{width:100%;font-size:18px}.exercise-card .toolbar{align-items:center}.exercise-card h3[lang="zh-CN"]{font-family:var(--chinese);font-size:clamp(28px,5vw,46px)}.exercise-card .notice p{margin:8px 0}.exercise-card .notice strong{color:var(--ink)}
-.achievement-list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.achievement{display:flex;flex-direction:column;gap:8px;padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}.achievement.unlocked{border-color:#6a9478;background:#edf6eb}.achievement span{font-size:14px;color:var(--muted)}
-.table-scroll{max-width:100%;overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin:18px 0 28px}.table-scroll table{min-width:680px}.table-scroll caption{text-align:left;padding:14px;font-size:14px}.table-scroll th[scope="row"]{font-size:15px;text-transform:none;letter-spacing:0;max-width:240px}.table-scroll td{font-size:14px}.table-scroll td:first-child{font:inherit}
-@media(max-width:700px){.learning-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.learning-stat{padding:15px}.exercise-card{padding:18px}.activity-grid{gap:12px}}
-@media(max-width:500px){nav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;max-width:100%;padding:4px 3px 8px;scrollbar-width:thin}nav button{flex:0 0 auto;min-height:44px}.learning-grid{grid-template-columns:1fr}.exercise-card .toolbar button{flex:1 1 120px}.exercise-options{grid-template-columns:1fr}.achievement-list{grid-template-columns:1fr}input,select,textarea{font-size:16px}.word-bank button{min-width:48px;min-height:48px}.learning-stat span{font-size:12px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+/* Shared learning components: compact dashboards, clear cards and calm feedback. */
+:root { --success:#24613d; --danger:#8f3028; --focus:#945018; --spacing-xs:8px; --spacing-sm:12px; --spacing-md:20px; --spacing-lg:28px }
+.skip-link { position:absolute; left:16px; top:-90px; padding:12px 18px; background:var(--green); color:white; z-index:20; border-radius:12px }
+.skip-link:focus { top:12px }
+#mainContent:focus,h2:focus { outline:none }
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,[tabindex="0"]:focus-visible { outline:3px solid var(--focus); outline-offset:4px }
+.learning-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:20px }
+.learning-card { display:flex; flex-direction:column; gap:16px; margin:0; box-shadow:none; border-top:3px solid #a6bf99 }
+.learning-card h3,.learning-card p { margin:0 }
+.learning-card h3 { font-size:22px; line-height:1.35; max-width:300px }
+.learning-card progress { width:100%; height:8px; accent-color:var(--green) }
+.learning-card .small { font-size:13px; line-height:1.75 }
+.learning-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; padding-top:8px }
+.learning-actions button { flex:1 1 120px; font-size:13px }
+.learning-actions button:last-child { background:var(--green); color:white; border-color:var(--green); flex-basis:100% }
+.learning-actions button:last-child:hover { background:var(--deep) }
+.learning-stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin:28px 0 18px }
+.learning-stat { background:var(--surface); border:1px solid var(--line); padding:22px; border-radius:18px; display:flex; flex-direction:column; gap:10px; min-width:0; position:relative }
+.learning-stat::before { content:''; display:block; height:4px; width:22px; background:#9cbf8c; border-radius:4px; margin-bottom:4px }
+.learning-stat:nth-child(2)::before { background:#d49672 }
+.learning-stat:nth-child(3)::before { background:#7ea39b }
+.learning-stat:nth-child(4)::before { background:#a09c76 }
+.learning-stat strong { font-size:clamp(25px,3vw,36px); line-height:1.1; letter-spacing:-1.2px; font-variant-numeric:tabular-nums; font-weight:730 }
+.learning-stat span { font-size:12px; color:var(--muted); overflow-wrap:anywhere; line-height:1.5 }
+#homeLearning .learning-stat { background:#f6f8f0 }
+#homeLearning>progress,#learningSummary>progress,#learningProgress>progress { width:100%; height:8px; accent-color:var(--green) }
+progress { border:0; border-radius:20px; overflow:hidden; background:#e3eadc }
+progress::-webkit-progress-bar { background:#e3eadc; border-radius:20px }
+progress::-webkit-progress-value { background:var(--green); border-radius:20px }
+progress::-moz-progress-bar { background:var(--green); border-radius:20px }
+#learningSummary { margin-bottom:32px }
+#homeLearning>.small { max-width:750px; font-size:12px; margin:12px 0 22px }
+.activity-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)); gap:18px; margin-top:26px; counter-reset:activity }
+.activity-card { display:flex; flex-direction:column; gap:12px; counter-increment:activity; box-shadow:none; position:relative; padding-top:25px }
+.activity-card::before { content:counter(activity,decimal-leading-zero); color:#5d7c62; font:600 11px var(--font); letter-spacing:2px; background:var(--soft); padding:5px 9px; border-radius:7px; align-self:flex-start; margin-bottom:4px }
+.activity-card h3,.activity-card p { margin:0 }
+.activity-card h3 { font-size:21px }
+.activity-card .pinyin { font:18px/1.6 var(--chinese); color:#59745d }
+.activity-card p { font-size:14px; line-height:1.7 }
+.activity-card p.small { font-size:12px; padding-top:10px; border-top:1px solid var(--line) }
+.activity-card button { margin-top:auto; font-size:13px }
+.activity-card:focus-within { border-color:var(--green) }
+#practice>progress { width:100%; accent-color:var(--green); height:8px; margin-bottom:6px }
+.exercise-card { max-width:850px; margin:22px auto; padding:30px }
+.exercise-card h3 { overflow-wrap:anywhere; font-size:24px; line-height:1.55 }
+.exercise-card h3[lang="zh-CN"] { font-family:var(--chinese); font-size:clamp(30px,5vw,46px) }
+.exercise-card button { overflow-wrap:anywhere }
+.exercise-card input { width:100%; font-size:18px }
+.exercise-card .toolbar { align-items:center; padding-top:16px }
+.exercise-card .toolbar button { font-size:13px }
+.exercise-options { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); gap:12px }
+.exercise-options>button { min-height:64px; text-align:left; padding:18px 20px; border-radius:15px; font-weight:500 }
+.exercise-options>label,.exercise-options .notice { grid-column:1/-1 }
+.exercise-card img { display:block; max-width:100%; object-fit:contain; margin:4px auto 24px; padding:12px; background:#f2f6ec; border-radius:24px }
+.exercise-card .reading-line { margin:18px 0 }
+.word-bank { display:flex; gap:10px; flex-wrap:wrap; grid-column:1/-1; padding:16px; border:1px dashed #afc2a9; background:#f6f8f1; border-radius:16px }
+.word-bank button { font:24px var(--chinese); min-width:48px; background:var(--surface); border-bottom-width:3px }
+.branch-option { display:block; width:100%; text-align:left; font:24px/1.5 var(--chinese); margin:12px 0; padding:18px 22px }
+.story-line { padding:16px 20px; border-left:3px solid #91af85; background:var(--surface); border-radius:0 14px 14px 0; max-width:850px }
+.notice:empty { display:none }
+.feedback-correct { border-left:4px solid var(--success); background:#edf6e9 }
+.feedback-wrong { border-left:4px solid var(--danger); background:#fff0e9 }
+.feedback-assisted { border-left:4px solid var(--accent); background:var(--warm) }
+.exercise-card .notice p { margin:9px 0; font-size:14px }
+.exercise-card .notice strong { color:var(--ink); font-size:18px }
+.achievement-list { list-style:none; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); gap:14px; margin:24px 0 32px }
+.achievement { display:flex; flex-direction:column; gap:10px; padding:21px; border:1px solid var(--line); border-radius:18px; background:#f7f8f2 }
+.achievement strong { font-size:15px; letter-spacing:-.2px }
+.achievement.unlocked { border-color:#a0bc90; background:#edf5e6 }
+.achievement span { font-size:13px; line-height:1.65; color:var(--muted) }
+.table-scroll { max-width:100%; overflow-x:auto; border:1px solid var(--line); border-radius:16px; margin:20px 0 32px }
+.table-scroll table { min-width:680px }
+.table-scroll caption { text-align:left; padding:18px; font-size:13px; color:var(--muted); background:#f8faf4 }
+.table-scroll th[scope="row"] { font-size:14px; text-transform:none; letter-spacing:0; max-width:240px; background:transparent; font-weight:600 }
+.table-scroll td { font-size:13px; font-variant-numeric:tabular-nums }
+.table-scroll td:first-child { font:inherit }
+#progressRows>p { margin:0; padding:16px 0; border-bottom:1px solid var(--line); font-size:14px }
+@media(max-width:700px) { .learning-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.learning-stat{padding:18px}.exercise-card{padding:23px}.activity-grid{gap:14px}.learning-grid{gap:16px} }
+@media(max-width:550px) { nav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;max-width:100%;padding:4px 3px 8px;scrollbar-width:thin}nav button{flex:0 0 auto;min-height:44px}.learning-grid{grid-template-columns:1fr}.learning-card{padding:24px}.exercise-card .toolbar button{flex:1 1 120px}.exercise-options{grid-template-columns:1fr}.exercise-options>button{min-height:58px}.achievement-list{grid-template-columns:1fr}input,select,textarea{font-size:16px}.word-bank{padding:12px;gap:9px}.word-bank button{min-width:48px;min-height:48px}.learning-stat span{font-size:12px}.learning-stats{gap:10px;margin-top:24px}.learning-stat{padding:16px}.activity-card{padding:23px}.branch-option{font-size:22px;padding:16px} }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important} }

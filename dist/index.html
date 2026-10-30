@@ -7,12 +7,11 @@
   ><link rel="stylesheet" href="css/main.css" /><link rel="stylesheet" href="css/readings.css" /><link rel="stylesheet" href="css/learning.css" />
   <a class="skip-link" href="#mainContent">Skip to learning content</a>
   <header>
-    <div class="brand"><span class="seal">字</span>Hanzi Daily</div>
-    <nav aria-label="Main navigation"><button data-tab="readings">Readings</button>
-      <button data-tab="home">Home</button
+    <div class="brand"><span class="seal" aria-hidden="true">字</span><span class="brand-copy"><strong>Hanzi Daily</strong><small>YOUR MANDARIN LEARNING STUDIO</small></span></div>
+    <nav aria-label="Main navigation"><button data-tab="home">Home</button
       ><button data-tab="learning">Learning Center</button><button data-tab="learn">Learn</button
       ><button data-tab="study">Review</button
-      ><button data-tab="games">Play</button
+      ><button data-tab="games">Play</button><button data-tab="readings">Readings</button
       ><button data-tab="progress">Progress</button
       ><button data-tab="words">Vocabulary</button
       >
@@ -36,11 +35,11 @@
       <span class="date" id="today"></span>
     </div>
     <section id="readings" class="hidden panel" aria-label="Interactive Chinese Reader"></section><section id="home" class="panel">
-      <span class="eyebrow">LEARN FIRST, THEN PRACTICE</span>
-      <h2>A lesson at a time.</h2>
+      <div class="home-intro"><div class="home-copy">
+      <span class="eyebrow">A SMALL HABIT. A WHOLE NEW LANGUAGE.</span>
+      <h2>A little Chinese.<br>A little more confidence.</h2>
       <p>
-        Choose a level, explore its lessons, study the vocabulary, then practice
-        with fifteen activities. No locked levels.
+        Build your vocabulary, find your rhythm, and put every lesson into practice. Fifteen ways to learn, one step at a time.
       </p>
       <div class="toolbar">
         <button class="primary" data-tab="learning">Start learning</button
@@ -51,6 +50,11 @@
         Your content and progress stay in this browser. No account or shared
         classroom storage is connected.
       </p>
+      </div><aside class="home-word" aria-label="Character spotlight: 学, xué, to learn">
+        <span class="word-label">ONE CHARACTER. A NEW BEGINNING.</span>
+        <span class="word-hanzi" lang="zh-CN">学</span>
+        <span class="word-pinyin">xué</span><span class="word-meaning">to learn · to study</span>
+      </aside></div>
       <div id="homeLearning"></div>
       <button class="primary" id="dailyPractice">Daily practice · 5 questions</button>
     </section>
